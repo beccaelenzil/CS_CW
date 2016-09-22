@@ -53,11 +53,27 @@ def flipside(s):
      If the length of the string is odd, the first half of the input string will have one fewer
      variable than the second half of the input.
     """
-    remainder = len(s)%2
-    if remainder == 0:
-        return s[len(s)/2:]+s[0:len(s)/2]
-    else:
-        return s[(len(s)/2):]+s[0:(len(s)/2)]
+    return s[(len(s)/2):]+s[0:(len(s)/2)]
 
 print 'flipside(maddting) is', flipside('maddting')
 print 'flipside(madting) is', flipside('madting')
+print 'flipside(mattsucks) is', flipside('mattsucks')
+
+def convertFromSeconds(s):
+    """
+    :param s: number of seconds
+    :return: (x,y,z,a) = (# of seconds, minutes, hours, days)
+    """
+
+    days = s/(60*60*24)
+    s = s%(60*60*24)
+    hours = s/(60*60)
+    s = s%(60*60)
+    minutes = s/60
+    seconds = s%(s/60)
+
+    return [days,hours,minutes,seconds]
+
+[days,hours,minutes,seconds] = convertFromSeconds(200000)
+
+print '200000 seconds is', days, 'days', hours, 'hours', minutes, 'minutes', seconds, 'seconds'
