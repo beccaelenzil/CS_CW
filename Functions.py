@@ -77,3 +77,8 @@ def convertFromSeconds(s):
 [days,hours,minutes,seconds] = convertFromSeconds(200000)
 
 print '200000 seconds is', days, 'days', hours, 'hours', minutes, 'minutes', seconds, 'seconds'
+
+
+def front3(s):
+  return s[0:3]+s[0:3]+s[0:3]
+print front3('Colin')
