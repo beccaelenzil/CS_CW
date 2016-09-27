@@ -14,7 +14,7 @@ def factorial(n):
     return answerSoFar
 print factorial(4)
 
-"""def numMatches(userPrefs, storedUserPrefs):
+def numMatches(userPrefs, storedUserPrefs):
     ''' return the number of elements that match between
         the lists userPrefs and storedUserPrefs '''
     count = 0
@@ -23,7 +23,7 @@ print factorial(4)
             count += 1
     return count
 print numMatches()
-"""
+
 
 def numMatches(listA, listB):
     ''' return the number of elements that match between

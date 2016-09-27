@@ -70,13 +70,14 @@ def convertFromSeconds(s):
     hours = s/(60*60)
     s = s%(60*60)
     minutes = s/60
-    seconds = s%(s/60)
+    seconds = s%60
 
     return [days,hours,minutes,seconds]
 
-[days,hours,minutes,seconds] = convertFromSeconds(200000)
+[days,hours,minutes,seconds] = convertFromSeconds(610)
 
-print '200000 seconds is', days, 'days', hours, 'hours', minutes, 'minutes', seconds, 'seconds'
+print '610 seconds is', days, 'days', hours, 'hours', minutes, 'minutes', seconds, 'seconds'
+
 
 
 def front3(s):
