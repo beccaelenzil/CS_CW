@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eacc368-f998-4d20-983f-dd796855820c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Iterations and Loops.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RepeatedTasks.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="IntroCS_CW.iws" />
@@ -34,11 +33,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Iterations and Loops.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Iterations and Loops.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Iterations and Loops.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
               <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RepeatedTasks.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RepeatedTasks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="72" column="32" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -73,12 +82,14 @@
         <option value="$PROJECT_DIR$/Functions.py" />
         <option value="$PROJECT_DIR$/Iteration Intro.py" />
         <option value="$PROJECT_DIR$/Iterations and Loops.py" />
+        <option value="$PROJECT_DIR$/Repeated Tasks Reading" />
+        <option value="$PROJECT_DIR$/RepeatedTasks.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="61" />
-    <option name="y" value="77" />
+    <option name="x" value="50" />
+    <option name="y" value="23" />
     <option name="width" value="1400" />
     <option name="height" value="833" />
   </component>
@@ -137,7 +148,7 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.Iterations and Loops">
+  <component name="RunManager" selected="Python.RepeatedTasks">
     <configuration default="false" name="listsAndStrings" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -185,6 +196,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="IntroCS_CW" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Iterations and Loops.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RepeatedTasks" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="IntroCS_CW" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RepeatedTasks.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -336,16 +364,18 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.listsAndStrings" />
       <item index="1" class="java.lang.String" itemvalue="Python.Functions" />
       <item index="2" class="java.lang.String" itemvalue="Python.Iterations and Loops" />
+      <item index="3" class="java.lang.String" itemvalue="Python.RepeatedTasks" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.Iterations and Loops" />
-        <item index="1" class="java.lang.String" itemvalue="Python.listsAndStrings" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Functions" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.RepeatedTasks" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Iterations and Loops" />
+        <item index="2" class="java.lang.String" itemvalue="Python.listsAndStrings" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Functions" />
       </list>
     </recent_temporary>
   </component>
@@ -356,7 +386,7 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="61" y="77" width="1400" height="833" extended-state="0" />
+    <frame x="50" y="23" width="1400" height="833" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24945612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -427,6 +457,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Repeated Tasks Reading">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RepeatedTasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="72" column="32" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
           <folding />
         </state>
       </provider>
