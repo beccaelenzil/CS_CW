@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eacc368-f998-4d20-983f-dd796855820c" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterations and Loops.py" afterPath="$PROJECT_DIR$/Loops.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Functions.py" afterPath="$PROJECT_DIR$/Functions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RepeatedTasks.py" afterPath="$PROJECT_DIR$/RepeatedTasks.py" />
     </list>
     <ignored path="IntroCS_CW.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Iterations and Loops.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Iterations and Loops.py">
+      <file leaf-file-name="Loops.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Loops.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+            <state relative-caret-position="455">
+              <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -64,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Functions.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Functions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
+            <state relative-caret-position="234">
               <caret line="76" column="53" selection-start-line="76" selection-start-column="53" selection-end-line="76" selection-end-column="53" />
               <folding />
             </state>
@@ -95,6 +94,7 @@
         <option value="$PROJECT_DIR$/Repeated Tasks Reading" />
         <option value="$PROJECT_DIR$/RepeatedTasks.py" />
         <option value="$PROJECT_DIR$/Functions.py" />
+        <option value="$PROJECT_DIR$/Loops.py" />
       </list>
     </option>
   </component>
@@ -159,7 +159,7 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.Functions">
+  <component name="RunManager" selected="Python.Iterations and Loops">
     <configuration default="false" name="listsAndStrings" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -206,7 +206,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="IntroCS_CW" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Iterations and Loops.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Loops.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -383,9 +383,9 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.Functions" />
-        <item index="1" class="java.lang.String" itemvalue="Python.RepeatedTasks" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Iterations and Loops" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Iterations and Loops" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Functions" />
+        <item index="2" class="java.lang.String" itemvalue="Python.RepeatedTasks" />
         <item index="3" class="java.lang.String" itemvalue="Python.listsAndStrings" />
       </list>
     </recent_temporary>
@@ -398,12 +398,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="50" y="23" width="1400" height="833" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24945612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32769832" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32769832" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -448,14 +448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Iterations and Loops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Repeated Tasks Reading">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -490,8 +482,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
+        <state relative-caret-position="234">
           <caret line="76" column="53" selection-start-line="76" selection-start-column="53" selection-end-line="76" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Loops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
           <folding />
         </state>
       </provider>
