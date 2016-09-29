@@ -127,9 +127,31 @@ def printBumps(num,symbol1,symbol2):
         printTriangle(x,symbol2,False)
 printBumps(6,'@','%')
 
-def printDiamonds(width,symbol):
+def printChevron(width,symbol):
     result = 0
+    spaces = width/2
     for x in range(width):
-        result = (result+1)*symbol
-        print result
-printDiamonds(5,'&')
+        spaces = spaces+1
+        result = result+1
+        print spaces*' '+result*symbol
+    for x in range(width):
+        spaces = spaces-1
+        result = width-x
+        print spaces*' '+symbol*result
+
+printChevron(5,'&')
+
+
+def printDiamond(width,symbol):
+    result = 0
+    spaces = width/2
+    for x in range(width):
+        spaces = spaces-1
+        result = result+1
+        print spaces*' '+result*symbol
+    for x in range(width):
+        spaces = spaces+1
+        result = width-x
+        print spaces*' '+symbol*result
+
+printDiamond(5,'&')
