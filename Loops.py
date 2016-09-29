@@ -147,11 +147,11 @@ def printDiamond(width,symbol):
     spaces = width/2
     for x in range(width):
         spaces = spaces-1
-        result = result+1
+        result = 1+result
         print spaces*' '+result*symbol
     for x in range(width):
         spaces = spaces+1
-        result = width-x
+        result = -x+width
         print spaces*' '+symbol*result
 
 printDiamond(5,'&')

@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eacc368-f998-4d20-983f-dd796855820c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MultiplicationPracticeGame.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Loops.py" afterPath="$PROJECT_DIR$/Loops.py" />
     </list>
     <ignored path="IntroCS_CW.iws" />
@@ -32,12 +34,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Loops.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Loops.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Loops.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="148" column="25" selection-start-line="148" selection-start-column="25" selection-end-line="148" selection-end-column="25" />
+            <state relative-caret-position="330">
+              <caret line="153" column="25" selection-start-line="153" selection-start-column="25" selection-end-line="153" selection-end-column="25" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MultiplicationPracticeGame.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MultiplicationPracticeGame.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="72" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,13 +107,15 @@
         <option value="$PROJECT_DIR$/Repeated Tasks Reading" />
         <option value="$PROJECT_DIR$/RepeatedTasks.py" />
         <option value="$PROJECT_DIR$/Functions.py" />
+        <option value="$PROJECT_DIR$/MultiplicationPractice Game.py" />
         <option value="$PROJECT_DIR$/Loops.py" />
+        <option value="$PROJECT_DIR$/MultiplicationPracticeGame.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
-    <option name="y" value="23" />
+    <option name="x" value="22" />
+    <option name="y" value="40" />
     <option name="width" value="1400" />
     <option name="height" value="827" />
   </component>
@@ -158,7 +174,7 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.Iterations and Loops">
+  <component name="RunManager" selected="Python.MultiplicationPracticeGame">
     <configuration default="false" name="listsAndStrings" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -223,6 +239,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="IntroCS_CW" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RepeatedTasks.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MultiplicationPracticeGame" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="IntroCS_CW" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MultiplicationPracticeGame.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -374,18 +407,20 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.listsAndStrings" />
       <item index="1" class="java.lang.String" itemvalue="Python.Functions" />
       <item index="2" class="java.lang.String" itemvalue="Python.Iterations and Loops" />
       <item index="3" class="java.lang.String" itemvalue="Python.RepeatedTasks" />
+      <item index="4" class="java.lang.String" itemvalue="Python.MultiplicationPracticeGame" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.Iterations and Loops" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Functions" />
-        <item index="2" class="java.lang.String" itemvalue="Python.RepeatedTasks" />
-        <item index="3" class="java.lang.String" itemvalue="Python.listsAndStrings" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.MultiplicationPracticeGame" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Iterations and Loops" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Functions" />
+        <item index="3" class="java.lang.String" itemvalue="Python.RepeatedTasks" />
+        <item index="4" class="java.lang.String" itemvalue="Python.listsAndStrings" />
       </list>
     </recent_temporary>
   </component>
@@ -396,7 +431,7 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="23" width="1400" height="827" extended-state="0" />
+    <frame x="22" y="40" width="1400" height="827" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24945612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -489,9 +524,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Loops.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="148" column="25" selection-start-line="148" selection-start-column="25" selection-end-line="148" selection-end-column="25" />
+        <state relative-caret-position="330">
+          <caret line="153" column="25" selection-start-line="153" selection-start-column="25" selection-end-line="153" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiplicationPracticeGame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="72" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
