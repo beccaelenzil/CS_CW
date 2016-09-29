@@ -102,3 +102,34 @@ print "count9([1, 9, 9]), 2 == ",count9([1, 9, 9])
 print "count9([1, 9, 9, 3, 9]), 3 == ",count9([1, 9, 9, 3, 9])
 
 
+def printrect(width,height,symbol):
+    for x in range(height):
+        print symbol*width
+
+printrect(4,6,'%')
+
+def printTriangle(width,symbol,rightsideup):
+    result = 0
+    if rightsideup == 1:
+        for x in range(width):
+            result = result + 1
+            print symbol*result
+    else:
+        for x in range(width):
+            result = width - x
+            print symbol*result
+
+printTriangle(10,'%',False)
+
+def printBumps(num,symbol1,symbol2):
+    for x in range(num+1):
+        printTriangle(x,symbol1,True)
+        printTriangle(x,symbol2,False)
+printBumps(6,'@','%')
+
+def printDiamonds(width,symbol):
+    result = 0
+    for x in range(width):
+        result = (result+1)*symbol
+        print result
+printDiamonds(5,'&')
