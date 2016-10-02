@@ -139,7 +139,7 @@ def printChevron(width,symbol):
         result = width-x
         print spaces*' '+symbol*result
 
-printChevron(5,'&')
+printChevron(50,'&')
 
 
 def printDiamond(width,symbol):

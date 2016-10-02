@@ -3,8 +3,8 @@ import time
 
 def play():
     for x in range(5):
-        factor1 = random.randint(0,12)
-        factor2 = random.randint(0,12)
+        factor1 = random.randint(0,12+x)
+        factor2 = random.randint(0,12+x)
 
         correctAnswer = factor1*factor2
         userAnswer=-1
@@ -15,19 +15,30 @@ def play():
                 if userAnswer == correctAnswer:
                     print "Nice"
                 else:
-                    print "You absolute waste of space."
                     print "try again"
             except:
-                print "Are you dumb? I'll give you a hint: the answer is an integer."
-                print "meaning 1,2,3,4,..."
+                print "I'll give you a hint: the answer is an integer."
                 print "no letters, no decimals, just straight up numbers"
+    again()
+
+def again():
+    print 'play again?'
+    answer = raw_input("type yes or no"+":")
+    if answer == 'yes':
+        play()
+    elif answer == 'no':
+        print 'game over'
+    else:
+        again()
+
 
 def instructions():
-    print "Let's see if you know how to do 1st grade math"
+    print "Let's see how well you know your multiplication tables"
     print "I'll give you two numbers and you answer with their product"
 
 def main():
     instructions()
     play()
+
 
 main()
