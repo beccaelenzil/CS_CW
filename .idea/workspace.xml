@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eacc368-f998-4d20-983f-dd796855820c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Loops.py" afterPath="$PROJECT_DIR$/Loops.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MultiplicationGameWTime.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MultiplicationPracticeGame.py" afterPath="$PROJECT_DIR$/MultiplicationPracticeGame.py" />
     </list>
     <ignored path="IntroCS_CW.iws" />
@@ -43,11 +44,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MultiplicationPracticeGame.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MultiplicationPracticeGame.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MultiplicationPracticeGame.py">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="20" selection-end-column="73" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MultiplicationGameWTime.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MultiplicationGameWTime.py">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -68,7 +81,7 @@
       <file leaf-file-name="problemSet2Feedback_CW.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/problemSet2Feedback_CW.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
+            <state relative-caret-position="355">
               <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="22" />
               <folding />
             </state>
@@ -109,12 +122,13 @@
         <option value="$PROJECT_DIR$/MultiplicationPractice Game.py" />
         <option value="$PROJECT_DIR$/Loops.py" />
         <option value="$PROJECT_DIR$/MultiplicationPracticeGame.py" />
+        <option value="$PROJECT_DIR$/MultiplicationGameWTime.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="22" />
-    <option name="y" value="40" />
+    <option name="x" value="18" />
+    <option name="y" value="23" />
     <option name="width" value="1400" />
     <option name="height" value="827" />
   </component>
@@ -173,24 +187,7 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.MultiplicationPracticeGame">
-    <configuration default="false" name="listsAndStrings" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="IntroCS_CW" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/listsAndStrings.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.MultiplicationGameWTime">
     <configuration default="false" name="Functions" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -255,6 +252,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="IntroCS_CW" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MultiplicationPracticeGame.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MultiplicationGameWTime" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="IntroCS_CW" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MultiplicationGameWTime.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -407,19 +421,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.listsAndStrings" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Functions" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Iterations and Loops" />
-      <item index="3" class="java.lang.String" itemvalue="Python.RepeatedTasks" />
-      <item index="4" class="java.lang.String" itemvalue="Python.MultiplicationPracticeGame" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Functions" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Iterations and Loops" />
+      <item index="2" class="java.lang.String" itemvalue="Python.RepeatedTasks" />
+      <item index="3" class="java.lang.String" itemvalue="Python.MultiplicationPracticeGame" />
+      <item index="4" class="java.lang.String" itemvalue="Python.MultiplicationGameWTime" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.MultiplicationPracticeGame" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Iterations and Loops" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Functions" />
-        <item index="3" class="java.lang.String" itemvalue="Python.RepeatedTasks" />
-        <item index="4" class="java.lang.String" itemvalue="Python.listsAndStrings" />
+        <item index="0" class="java.lang.String" itemvalue="Python.MultiplicationGameWTime" />
+        <item index="1" class="java.lang.String" itemvalue="Python.MultiplicationPracticeGame" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Iterations and Loops" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Functions" />
+        <item index="4" class="java.lang.String" itemvalue="Python.RepeatedTasks" />
       </list>
     </recent_temporary>
   </component>
@@ -430,13 +444,13 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="22" y="40" width="1400" height="827" extended-state="0" />
+    <frame x="18" y="23" width="1400" height="827" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24945612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.327654" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27522936" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42201835" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27522936" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -497,14 +511,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/problemSet2Feedback_CW.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Functions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -529,10 +535,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/problemSet2Feedback_CW.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MultiplicationPracticeGame.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="20" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiplicationGameWTime.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

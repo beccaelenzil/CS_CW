@@ -8,17 +8,30 @@ def play():
 
         correctAnswer = factor1*factor2
         userAnswer=-1
+
         while userAnswer!= correctAnswer:
+
+            time1 = time.time()
+            time2 = time.time()
+            timeElapsed = time2 - time1
+
+            print "time elapsed: ", timeElapsed
+
             userAnswer = raw_input("Please enter the product of "+ str(factor1)+" and "+str(factor2)+": ")
-            try:
-                userAnswer=int(userAnswer)
-                if userAnswer == correctAnswer:
-                    print "Nice"
-                else:
-                    print "try again"
-            except:
-                print "I'll give you a hint: the answer is an integer."
-                print "no letters, no decimals, just straight up numbers"
+
+
+            while timeElapsed<5:
+                try:
+                    userAnswer=int(userAnswer)
+                    if userAnswer == correctAnswer:
+                        print "Correct"
+                    else:
+                        print "Incorrect"
+                except:
+                    print "I'll give you a hint: the answer is an integer."
+                    print "no letters, no decimals, just straight up numbers"
+
+
     again()
 
 def again():
