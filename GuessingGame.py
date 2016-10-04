@@ -1,12 +1,25 @@
 import random
 
 def play():
-    CompNum = random.randint(0,3)
-    userAnswer = raw_input('Whats your guess? ')
-    if userAnswer == CompNum:
-        print 'NO WAY YOU ACTUALLY GOT IT'
-    else:
-        print 'nah'
+    CompNum = random.randint(0,101)
+    userAnswer = -1
+    GuessCount = 0
+    while userAnswer != CompNum:
+        userAnswer = int(raw_input('Whats your guess? '))
+        if userAnswer < CompNum:
+            print 'Too low'
+            GuessCount = GuessCount + 1
+        elif userAnswer > CompNum:
+            print 'Too high'
+            GuessCount = GuessCount + 1
+        elif userAnswer == CompNum:
+            print 'good job!'
+            GuessCount = GuessCount + 1
+            print 'You guessed this many times: '
+            print GuessCount
+        else:
+            print 'a number'
+            GuessCount = GuessCount + 1
 
 def instructions():
     print "I'm thinking of a number between 1 and 100. Can you guess it?"
