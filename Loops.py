@@ -1,4 +1,4 @@
-def pow(b,p):
+def power(b,p):
 
     """
     b=base
@@ -10,9 +10,9 @@ def pow(b,p):
     for x in range (p):
         result = result*b
     return result
-print pow(5,2)
-print pow(1000,0)
-print pow(2,6)
+print power(5,2)
+print power(1000,0)
+print power(2,6)
 
 
 def summedodds(L):
