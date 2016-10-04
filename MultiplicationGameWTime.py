@@ -11,27 +11,30 @@ def play():
 
         while userAnswer!= correctAnswer:
 
+            # set time when problem displayed 
             time1 = time.time()
-            time2 = time.time()
-            timeElapsed = time2 - time1
-
-            print "time elapsed: ", timeElapsed
 
             userAnswer = raw_input("Please enter the product of "+ str(factor1)+" and "+str(factor2)+": ")
 
+            # find time elapsed since problem displayed
+            time2 = time.time()
+            timeElapsed = time2 - time1
 
-            while timeElapsed<5:
-                try:
-                    userAnswer=int(userAnswer)
+            try:
+                userAnswer=int(userAnswer)
+                if timeElapsed < 5:
                     if userAnswer == correctAnswer:
                         print "Correct"
                     else:
                         print "Incorrect"
-                except:
-                    print "I'll give you a hint: the answer is an integer."
-                    print "no letters, no decimals, just straight up numbers"
-
-
+                else:
+                    if userAnswer == correctAnswer:
+                        print "Correct, but you were too slow."
+                    else:
+                        print "Incorrect and you were too slow."
+            except:
+                print "I'll give you a hint: the answer is an integer."
+                print "no letters, no decimals, just straight up numbers"
     again()
 
 def again():
@@ -43,7 +46,6 @@ def again():
         print 'game over'
     else:
         again()
-
 
 def instructions():
     print "Let's see how well you know your multiplication tables"
