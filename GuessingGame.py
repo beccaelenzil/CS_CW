@@ -1,24 +1,24 @@
 import random
 
 def play():
-    CompNum = random.randint(0,101)
+    CompNum = random.randint(1,100)
     userAnswer = -1
     GuessCount = 0
     while userAnswer != CompNum:
-        userAnswer = int(raw_input('Whats your guess? '))
-        if userAnswer < CompNum:
-            print 'Too low'
-            GuessCount = GuessCount + 1
-        elif userAnswer > CompNum:
-            print 'Too high'
-            GuessCount = GuessCount + 1
-        elif userAnswer == CompNum:
-            print 'good job!'
-            GuessCount = GuessCount + 1
-            print 'You guessed this many times: '
-            print GuessCount
-        else:
-            print 'a number'
+        try:
+            userAnswer = int(raw_input('Whats your guess? '))
+            if userAnswer < CompNum:
+                print 'Too low'
+                GuessCount = GuessCount + 1
+            elif userAnswer > CompNum:
+                print 'Too high'
+                GuessCount = GuessCount + 1
+            elif userAnswer == CompNum:
+                print 'good job!'
+                GuessCount = GuessCount + 1
+                print 'You found the answer after '+str(GuessCount)+' guesses'
+        except:
+            print 'a number, please'
             GuessCount = GuessCount + 1
 
 def instructions():
