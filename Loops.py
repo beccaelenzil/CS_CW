@@ -15,7 +15,7 @@ print power(1000,0)
 print power(2,6)
 
 
-def summedodds(L):
+def summedOdds(L):
     """
     :param L: list of numbers
     :return: sum of odd numbers in list
@@ -24,8 +24,8 @@ def summedodds(L):
     for e in L:
         result = result + e
     return result
-print summedodds([5,6,7])
-print summedodds(range(3,10))
+print summedOdds([5,6,7])
+print summedOdds(range(3,10))
 
 def mult(n,m):
     """
