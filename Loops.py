@@ -78,16 +78,16 @@ print "dot( [], [6] )           0.0 ==", dot( [], [6] )
 print "dot( [], [] )            0.0 ==", dot( [], [] )
 
 
-def countevens(L):
+def count_evens(L):
     result = 0
     for x in L:
         if x%2 == 0:
             result = result + 1
     return result
 
-print "countevens([2, 1, 2, 3, 4], 3 == ", countevens([2, 1, 2, 3, 4])
-print "countevens([2, 2, 0]), 3 == ", countevens([2, 2, 0])
-print "countevens([1, 3, 5]), 0 == ", countevens([1, 3, 5])
+print "countevens([2, 1, 2, 3, 4], 3 == ", count_evens([2, 1, 2, 3, 4])
+print "countevens([2, 2, 0]), 3 == ", count_evens([2, 2, 0])
+print "countevens([1, 3, 5]), 0 == ", count_evens([1, 3, 5])
 
 
 def count9(L):
