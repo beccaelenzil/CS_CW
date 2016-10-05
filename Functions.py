@@ -78,7 +78,7 @@ def convertFromSeconds(s):
 
 print '610 seconds is', days, 'days', hours, 'hours', minutes, 'minutes', seconds, 'seconds'
 
-
+convertFromSeconds(610) == [0, 0, 10, 10]
 
 def front3(s):
   return s[0:3]+s[0:3]+s[0:3]

@@ -1,5 +1,5 @@
 Total Score: 8/9
-Notes:
+Notes: Correction noted to convert from seconds and total score raised to 9/9
 
 Problem 1 --- Score: 3/3
 Notes:
@@ -16,7 +16,7 @@ answer8 = hardeharharhar:  hardeharharhar True
 answer9 = legomyego:  legomyego True
 answer10 = clearcall:  clearcall True
 
-Problem 2 - Part 1 --- Score:
+Problem 2 - Part 1 --- Score:3/3
 Notes:
 
 sq(2) == 4:  4 True
