@@ -1,4 +1,4 @@
-Total Score:
+Total Score: 8/9
 Notes:
 -------------------------------------
 Problem 1) For Loops --- Score: 2/3
@@ -39,10 +39,10 @@ count9([1, 9, 9]), 2 ==  2 True
 count9([1, 9, 9, 3, 9]), 3 ==  3 True
 
 -------------------------------------
-Problem 2) Multiplication Practice Game --- Score:
-Notes:
+Problem 2) Multiplication Practice Game --- Score: 3/3
+Notes: Nice work adding a timer and play again.
 
 -------------------------------------
-Problem 3) Guess My Number --- Score:
-Notes:
+Problem 3) Guess My Number --- Score: 3/3
+Notes: Guess counter is a nice addition.
 
