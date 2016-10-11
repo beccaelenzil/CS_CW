@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eacc368-f998-4d20-983f-dd796855820c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GuessMyRule.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="IntroCS_CW.iws" />
@@ -45,8 +46,8 @@
       <file leaf-file-name="MultiplicationPracticeGame.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MultiplicationPracticeGame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="5" column="40" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="40" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -66,11 +67,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GuessingGame.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GuessingGame.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GuessingGame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="340">
+              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GuessMyRule.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GuessMyRule.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -132,11 +143,13 @@
         <option value="$PROJECT_DIR$/MultiplicationPracticeGame.py" />
         <option value="$PROJECT_DIR$/MultiplicationGameWTime.py" />
         <option value="$PROJECT_DIR$/GuessingGame.py" />
+        <option value="$PROJECT_DIR$/GuessMyRule.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="57" />
+    <option name="x" value="74" />
+    <option name="y" value="60" />
     <option name="width" value="1400" />
     <option name="height" value="827" />
   </component>
@@ -195,24 +208,7 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.GuessingGame">
-    <configuration default="false" name="Functions" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="IntroCS_CW" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Functions.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.GuessMyRule">
     <configuration default="false" name="Iterations and Loops" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -277,6 +273,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="IntroCS_CW" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GuessingGame.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="GuessMyRule" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="IntroCS_CW" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GuessMyRule.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -429,19 +442,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Functions" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Iterations and Loops" />
-      <item index="2" class="java.lang.String" itemvalue="Python.MultiplicationPracticeGame" />
-      <item index="3" class="java.lang.String" itemvalue="Python.MultiplicationGameWTime" />
-      <item index="4" class="java.lang.String" itemvalue="Python.GuessingGame" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Iterations and Loops" />
+      <item index="1" class="java.lang.String" itemvalue="Python.MultiplicationPracticeGame" />
+      <item index="2" class="java.lang.String" itemvalue="Python.MultiplicationGameWTime" />
+      <item index="3" class="java.lang.String" itemvalue="Python.GuessingGame" />
+      <item index="4" class="java.lang.String" itemvalue="Python.GuessMyRule" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.GuessingGame" />
-        <item index="1" class="java.lang.String" itemvalue="Python.MultiplicationGameWTime" />
-        <item index="2" class="java.lang.String" itemvalue="Python.MultiplicationPracticeGame" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Iterations and Loops" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Functions" />
+        <item index="0" class="java.lang.String" itemvalue="Python.GuessMyRule" />
+        <item index="1" class="java.lang.String" itemvalue="Python.GuessingGame" />
+        <item index="2" class="java.lang.String" itemvalue="Python.MultiplicationGameWTime" />
+        <item index="3" class="java.lang.String" itemvalue="Python.MultiplicationPracticeGame" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Iterations and Loops" />
       </list>
     </recent_temporary>
   </component>
@@ -452,8 +465,8 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="57" width="1400" height="827" extended-state="0" />
-    <editor active="true" />
+    <frame x="74" y="60" width="1400" height="827" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24945612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -483,7 +496,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -530,16 +545,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Repeated Tasks Reading" />
-    <entry file="file://$PROJECT_DIR$/MultiplicationPracticeGame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RepeatedTasks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -582,6 +587,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/GuessingGame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/listsAndStrings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -590,10 +603,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GuessingGame.py">
+    <entry file="file://$PROJECT_DIR$/MultiplicationPracticeGame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GuessMyRule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
           <folding />
         </state>
       </provider>
