@@ -36,15 +36,29 @@ def GuessRule():
             q = raw_input('b is an integer. What do you think b is? ')
         if int(q) == yIntercept:
             print 'You win!'
+            playAgain()
         else:
             print 'Nope'
             print 'Try more numbers'
-        inputOutput()
+            inputOutput()
 
     else:
         print 'Nope'
         print 'Try more numbers'
         inputOutput()
+
+def  playAgain():
+    m = raw_input('Would you like to play again? Enter yes or no: ')
+    m = m.lower()
+    if m == 'yes':
+        inputOutput()
+    elif m == 'no':
+        print "goodbye"
+    while m != 'yes' and m!= 'no':
+        raw_input('Would you like to play again? Enter yes or no: ')
+
+
+
 
 def instructions():
     print "hi! Let's play a game."
