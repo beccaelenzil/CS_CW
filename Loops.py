@@ -22,8 +22,12 @@ def summedOdds(L):
     """
     result = 0
     for e in L:
-        result = result + e
+        if e%2 != 0:
+            result = result + e
+        else:
+            result = result
     return result
+
 print summedOdds([5,6,7])
 print summedOdds(range(3,10))
 

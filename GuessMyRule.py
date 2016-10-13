@@ -66,7 +66,7 @@ def  playAgain():
     m = raw_input('Would you like to play again? Enter yes or no: ')
     m = m.lower()
     if m == 'yes':
-        setValues()
+    setValues()
     elif m == 'no':
         print "goodbye"
     while m != 'yes' and m!= 'no':

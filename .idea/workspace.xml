@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2eacc368-f998-4d20-983f-dd796855820c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GuessMyRule.py" afterPath="$PROJECT_DIR$/GuessMyRule.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Loops.py" afterPath="$PROJECT_DIR$/Loops.py" />
     </list>
     <ignored path="IntroCS_CW.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Loops.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Loops.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Loops.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1018">
-              <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+            <state relative-caret-position="287">
+              <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -76,11 +77,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GuessMyRule.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GuessMyRule.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GuessMyRule.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="68" column="18" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
+              <caret line="68" column="14" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ps3fedbk_CW.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ps3fedbk_CW.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -109,8 +120,8 @@
       <file leaf-file-name="Functions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="76" column="53" selection-start-line="76" selection-start-column="53" selection-end-line="76" selection-end-column="53" />
+            <state relative-caret-position="1309">
+              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -138,17 +149,17 @@
         <option value="$PROJECT_DIR$/RepeatedTasks.py" />
         <option value="$PROJECT_DIR$/Functions.py" />
         <option value="$PROJECT_DIR$/MultiplicationPractice Game.py" />
-        <option value="$PROJECT_DIR$/Loops.py" />
         <option value="$PROJECT_DIR$/MultiplicationPracticeGame.py" />
         <option value="$PROJECT_DIR$/MultiplicationGameWTime.py" />
         <option value="$PROJECT_DIR$/GuessingGame.py" />
         <option value="$PROJECT_DIR$/GuessMyRule.py" />
+        <option value="$PROJECT_DIR$/Loops.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="136" />
-    <option name="y" value="142" />
+    <option name="x" value="68" />
+    <option name="y" value="24" />
     <option name="width" value="1400" />
     <option name="height" value="827" />
   </component>
@@ -464,13 +475,13 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="136" y="142" width="1400" height="827" extended-state="0" />
+    <frame x="68" y="24" width="1400" height="827" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24945612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42201835" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2857143" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42201835" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2857143" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -544,34 +555,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Repeated Tasks Reading" />
-    <entry file="file://$PROJECT_DIR$/RepeatedTasks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Loops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1018">
-          <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/problemSet2Feedback_CW.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="76" column="53" selection-start-line="76" selection-start-column="53" selection-end-line="76" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -615,7 +602,39 @@
     <entry file="file://$PROJECT_DIR$/GuessMyRule.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="68" column="18" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
+          <caret line="68" column="14" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RepeatedTasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ps3fedbk_CW.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Loops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
           <folding />
         </state>
       </provider>
