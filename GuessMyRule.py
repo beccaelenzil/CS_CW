@@ -2,15 +2,16 @@ import random
 
 #Sets two variables, Slope and yIntercept, to be random numbers between 1 and 10
 def setValues():
+    gameCount = 0
     Slope = random.randint(1,10)
     yIntercept = random.randint(1,10)
-    inputOutput(Slope, yIntercept)
+    inputOutput(Slope, yIntercept, gameCount)
 
 #Requests user input. Multiplies the input (an integer) by Slope and adds yIntercept to the product.
 #Asks if the user needs to try more inputs in order to guess the Slope and yIntercept
 #If the user says yes, the function will start over
 #If the user says no, it will send the user to GuessRule()
-def inputOutput(Slope, yIntercept):
+def inputOutput(Slope, yIntercept, gameCount):
 
     x = raw_input("please select a number: ")
     while x.isdigit() == False:
@@ -19,6 +20,7 @@ def inputOutput(Slope, yIntercept):
     compRule = Slope*int(x)+yIntercept
     print 'm('+str(int(x))+')+'+'b= '+str(compRule)
     print " "
+    gameCount = gameCount+1
 
     y = raw_input('Do you need to select another input? Enter yes or no: ')
     y = y.lower()
@@ -26,9 +28,10 @@ def inputOutput(Slope, yIntercept):
         y = raw_input('Do you need to select another input? Enter yes or no: ')
 
     if y == 'yes':
-        inputOutput(Slope,yIntercept)
+        inputOutput(Slope,yIntercept,gameCount)
     elif y == 'no':
-        GuessRule(Slope,yIntercept)
+        GuessRule(Slope,yIntercept,gameCount)
+    return gameCount
 
 
 #Asks the user to guess what Slope is.
@@ -36,7 +39,7 @@ def inputOutput(Slope, yIntercept):
 #If the user guesses correctly, the user is asked what yIntercept is.
 #If the user guesses yIntercept incorrectly, he is told to try more numbers and sent back to inputOutput()
 #If the user is correct, the game is over, and the user is sent to playAgain()
-def GuessRule(Slope,yIntercept):
+def GuessRule(Slope,yIntercept,gameCount):
     z = raw_input('What do you think m is? ')
     while z.isdigit() == False:
         z = raw_input('m is an integer. What do you think m is? ')
@@ -47,18 +50,24 @@ def GuessRule(Slope,yIntercept):
             q = raw_input('b is an integer. What do you think b is? ')
         if int(q) == yIntercept:
             print 'You win!'
-            playAgain()
+            triesToPlayAgain(gameCount)
         else:
             print 'Nope'
             print 'Try more numbers'
             print ' '
-            inputOutput(Slope,yIntercept)
+            inputOutput(Slope,yIntercept,gameCount)
 
     else:
         print 'Nope'
         print 'Try more numbers'
-        inputOutput(Slope,yIntercept)
+        inputOutput(Slope,yIntercept,gameCount)
 
+def triesToPlayAgain(gameCount):
+    if gameCount == 1:
+        print 'That took you ' + str(gameCount) + ' try!'
+    else:
+        print 'That took you ' + str(gameCount) + ' tries!'
+    playAgain()
 #Asks the user if he wants to play again
 #If yes, user is sent back to inputOutput()
 #If no, the game ends
@@ -66,7 +75,7 @@ def  playAgain():
     m = raw_input('Would you like to play again? Enter yes or no: ')
     m = m.lower()
     if m == 'yes':
-    setValues()
+        setValues()
     elif m == 'no':
         print "goodbye"
     while m != 'yes' and m!= 'no':
