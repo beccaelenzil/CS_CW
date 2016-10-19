@@ -9,9 +9,10 @@ def rs():
 
 
 def rwpos(start, nsteps):
-    for x in range(nsteps):
-        x = x + rs()
-        return x + start
-        print 'current position is '+x
+    currentPosition = start
+    for i in range(nsteps):
+        currentPosition = currentPosition + rs()
+        print 'current position is '+ str(currentPosition)
+    return currentPosition
 
 rwpos(40,4)
