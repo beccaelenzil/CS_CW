@@ -1,12 +1,14 @@
-def FibSequenceRec(x):
+#https://trinket.io/python/21a9eac422
+
+def Fib(x):
     if x == 0:
         return 0
     elif x == 1:
         return 1
     else:
-        return FibSequenceRec(x-1)+FibSequenceRec(x-2)
+        return Fib(x-1)+Fib(x-2)
 
-print FibSequenceRec(20)
+print Fib(20)
 
 
 def fibIter(x):
@@ -21,5 +23,5 @@ def fibIter(x):
             print fibSeq
         return fibSeq[-1]
 
-print fibIter(50)
+print fibIter(20)
 
