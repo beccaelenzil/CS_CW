@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eacc368-f998-4d20-983f-dd796855820c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GameOfLife.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RandomWalk.py" afterPath="$PROJECT_DIR$/RandomWalk.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Recursion.py" afterPath="$PROJECT_DIR$/Recursion.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RecursiveFunctions.py" afterPath="$PROJECT_DIR$/RecursiveFunctions.py" />
     </list>
     <ignored path="IntroCS_CW.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,7 +65,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RecursiveFunctions.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RecursiveFunctions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RecursiveFunctions.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1054">
@@ -80,8 +78,18 @@
       <file leaf-file-name="RandomWalk.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RandomWalk.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
+            <state relative-caret-position="616">
               <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameOfLife.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GameOfLife.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -147,6 +155,7 @@
         <option value="$PROJECT_DIR$/Recursion.py" />
         <option value="$PROJECT_DIR$/RecursiveFunctions.py" />
         <option value="$PROJECT_DIR$/RandomWalk.py" />
+        <option value="$PROJECT_DIR$/GameOfLife.py" />
       </list>
     </option>
   </component>
@@ -212,24 +221,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="rev&#9;null&#9;null" />
   </component>
-  <component name="RunManager" selected="Python.RandomWalk">
-    <configuration default="false" name="GuessMyRule" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="IntroCS_CW" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GuessMyRule.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.GameOfLife">
     <configuration default="false" name="Recursion" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -294,6 +286,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="IntroCS_CW" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/listsAndStrings.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="GameOfLife" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="IntroCS_CW" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GameOfLife.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -446,19 +455,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.GuessMyRule" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Recursion" />
-      <item index="2" class="java.lang.String" itemvalue="Python.RecursiveFunctions" />
-      <item index="3" class="java.lang.String" itemvalue="Python.RandomWalk" />
-      <item index="4" class="java.lang.String" itemvalue="Python.listsAndStrings" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Recursion" />
+      <item index="1" class="java.lang.String" itemvalue="Python.RecursiveFunctions" />
+      <item index="2" class="java.lang.String" itemvalue="Python.RandomWalk" />
+      <item index="3" class="java.lang.String" itemvalue="Python.listsAndStrings" />
+      <item index="4" class="java.lang.String" itemvalue="Python.GameOfLife" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.RandomWalk" />
-        <item index="1" class="java.lang.String" itemvalue="Python.RecursiveFunctions" />
-        <item index="2" class="java.lang.String" itemvalue="Python.listsAndStrings" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Recursion" />
-        <item index="4" class="java.lang.String" itemvalue="Python.GuessMyRule" />
+        <item index="0" class="java.lang.String" itemvalue="Python.GameOfLife" />
+        <item index="1" class="java.lang.String" itemvalue="Python.RandomWalk" />
+        <item index="2" class="java.lang.String" itemvalue="Python.RecursiveFunctions" />
+        <item index="3" class="java.lang.String" itemvalue="Python.listsAndStrings" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Recursion" />
       </list>
     </recent_temporary>
   </component>
@@ -475,17 +484,17 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24945612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42201835" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42463958" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42463958" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -709,14 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RandomWalk.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ps3fedbk_CW.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -745,6 +746,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
           <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RandomWalk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameOfLife.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
           <folding />
         </state>
       </provider>
