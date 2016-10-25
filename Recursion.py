@@ -1,12 +1,12 @@
-def FibSequenceRec(x):
+def fib(x):
     if x == 0:
         return 0
     elif x == 1:
         return 1
     else:
-        return FibSequenceRec(x-1)+FibSequenceRec(x-2)
+        return fib(x-1)+fib(x-2)
 
-print FibSequenceRec(20)
+#print fib(20)
 
 
 def fibIter(x):
@@ -18,9 +18,9 @@ def fibIter(x):
     else:
         for n in range(2,x):
             fibSeq.append(fibSeq[n-1]+fibSeq[n-2])
-            print fibSeq
+            #print fibSeq
         return fibSeq[-1]
 
-print fibIter(50)
+#print fibIter(50)
 
 
