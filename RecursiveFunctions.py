@@ -1,12 +1,12 @@
 #https://trinket.io/python/21a9eac422
 
-def Fib(x):
+def fib(x):
     if x == 0:
         return 0
     elif x == 1:
         return 1
     else:
-        return Fib(x-1)+Fib(x-2)
+        return fib(x-1)+fib(x-2)
 
 #print Fib(20)
 
@@ -27,7 +27,7 @@ def fibIter(x):
 
 
 
-
+""""
 def listReverseNotIter(L):
     if len(L) == 0:
         return 'a list of values, please'
@@ -40,6 +40,7 @@ print listReverseNotIter([1,2,3,4,5])
 print listReverseNotIter([])
 print listReverseNotIter([1,4,7,9])
 print listReverseNotIter([1])
+"""
 
 def listReverseIter(L):
     K = []
