@@ -20,7 +20,7 @@ def fibIter(x):
     else:
         for n in range(2,x):
             fibSeq.append(fibSeq[n-1]+fibSeq[n-2])
-            print fibSeq
+            #print fibSeq
         return fibSeq[-1]
 
 #print fibIter(20)
@@ -48,10 +48,10 @@ def listReverseIter(L):
         K.append(L[i])
     return K
 
-print listReverseIter([1,2,3,4,5])
-print listReverseIter([])
-print listReverseIter([1,4,7,9])
-print listReverseIter([1])
+#print listReverseIter([1,2,3,4,5])
+#print listReverseIter([])
+#print listReverseIter([1,4,7,9])
+#print listReverseIter([1])
 
 def listReverse(L):
     if len(L) == 0:
@@ -61,8 +61,8 @@ def listReverse(L):
     else:
         return [L[-1]]+listReverse(L[0:-1])
 
-print listReverse([1,2,3,4,5])
-print listReverse([])
-print listReverse([1,4,7,9])
-print listReverse([1])
+#print listReverse([1,2,3,4,5])
+#print listReverse([])
+#print listReverse([1,4,7,9])
+#print listReverse([1])
 
