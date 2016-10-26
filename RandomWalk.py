@@ -95,3 +95,6 @@ def ave_sq_disp(numtrials):
 
 
 print ave_sq_disp(1000)
+
+
+rwsteps(5,0,10)
