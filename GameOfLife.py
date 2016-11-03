@@ -123,7 +123,7 @@ def countNeighbors(row,col,A):
 
 A = randomCells(5,5)
 
-printBoard(A)
+#printBoard(A)
 
 #print countNeighbors(2,1,A)
 #print countNeighbors(2,2,A)

@@ -1,11 +1,11 @@
-from random import *
+import random
 
 def rs():
     """ rs chooses a random step and returns it
         note that a call to rs() requires parentheses
         inputs: none at all!
     """
-    return choice([0,1])
+    return random.choice([0,1])
 
 def createOneRow(width):
     """ returns one row of zeros of width "width"...
@@ -40,13 +40,22 @@ I = createBoard(5,5)
 #printBoard(I)
 
 def unsegregatedBoard(width,height,percentX,percent0):
+    numberX = int(width*height*percentX)
+    numberY = int(width*height*percent0)
+    numberO = width*height-numberY-numberX
+    population = numberO*'0' + numberX*'X' + numberY*'Y'
+    population = random.sample(population, width*height)
+    oiii=0
     Z = createBoard(width,height)
-    numberX = width*height*percentX
-    numberO = width*height*percent0
-    for row in range(1,height-1):
-        for col in range(1,width-1):
-            Z[row][col]= random.choice()
+    for r in range(width):
+        for c in range(height):
+            Z[r][c] = population[oiii]
+            oiii = oiii + 1
     return Z
+
+
+Z = unsegregatedBoard(10,10,0.30,.25)
+printBoard(Z)
 
 
 
