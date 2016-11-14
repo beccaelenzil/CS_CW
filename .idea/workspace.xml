@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eacc368-f998-4d20-983f-dd796855820c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SegregationModel.py" afterPath="$PROJECT_DIR$/SegregationModel.py" />
     </list>
     <ignored path="IntroCS_CW.iws" />
@@ -33,34 +32,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RecursiveFunctions.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RecursiveFunctions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-              <folding>
-                <marker date="1477588310000" expanded="true" signature="317:381" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GameOfLife.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GameOfLife.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="103" column="12" selection-start-line="103" selection-start-column="12" selection-end-line="103" selection-end-column="12" />
+            <state relative-caret-position="1037">
+              <caret line="78" column="14" selection-start-line="78" selection-start-column="14" selection-end-line="78" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SegregationModel.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SegregationModel.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SegregationModel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+            <state relative-caret-position="2138">
+              <caret line="163" column="52" selection-start-line="163" selection-start-column="52" selection-end-line="163" selection-end-column="52" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SegregationSimulation.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SegregationSimulation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+              <folding>
+                <element signature="e#43#56#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,7 +67,7 @@
       <file leaf-file-name="gameOfLife_fdbk_CW.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gameOfLife_fdbk_CW.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-183">
+            <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -78,8 +77,8 @@
       <file leaf-file-name="GameofLifeSimulation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GameofLifeSimulation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="387">
+              <caret line="46" column="15" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
               <folding>
                 <element signature="e#43#56#0" expanded="true" />
               </folding>
@@ -163,12 +162,13 @@
         <option value="$PROJECT_DIR$/GameOfLife.py" />
         <option value="$PROJECT_DIR$/GameofLifeSimulation.py" />
         <option value="$PROJECT_DIR$/SegregationModel.py" />
+        <option value="$PROJECT_DIR$/SegregationSimulation.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="150" />
-    <option name="y" value="162" />
+    <option name="x" value="87" />
+    <option name="y" value="87" />
     <option name="width" value="1400" />
     <option name="height" value="862" />
   </component>
@@ -228,24 +228,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="rev&#9;null&#9;null" />
   </component>
-  <component name="RunManager" selected="Python.SegregationModel">
-    <configuration default="false" name="RandomWalk" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="IntroCS_CW" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RandomWalk.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.SegregationSimulation">
     <configuration default="false" name="GameOfLife" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -310,6 +293,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="IntroCS_CW" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GameofLifeSimulation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SegregationSimulation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="IntroCS_CW" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SegregationSimulation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -462,19 +462,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.RandomWalk" />
-      <item index="1" class="java.lang.String" itemvalue="Python.GameOfLife" />
-      <item index="2" class="java.lang.String" itemvalue="Python.pygameCheck" />
-      <item index="3" class="java.lang.String" itemvalue="Python.SegregationModel" />
-      <item index="4" class="java.lang.String" itemvalue="Python.GameofLifeSimulation" />
+      <item index="0" class="java.lang.String" itemvalue="Python.GameOfLife" />
+      <item index="1" class="java.lang.String" itemvalue="Python.pygameCheck" />
+      <item index="2" class="java.lang.String" itemvalue="Python.SegregationModel" />
+      <item index="3" class="java.lang.String" itemvalue="Python.GameofLifeSimulation" />
+      <item index="4" class="java.lang.String" itemvalue="Python.SegregationSimulation" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.SegregationModel" />
-        <item index="1" class="java.lang.String" itemvalue="Python.GameOfLife" />
-        <item index="2" class="java.lang.String" itemvalue="Python.GameofLifeSimulation" />
-        <item index="3" class="java.lang.String" itemvalue="Python.pygameCheck" />
-        <item index="4" class="java.lang.String" itemvalue="Python.RandomWalk" />
+        <item index="0" class="java.lang.String" itemvalue="Python.SegregationSimulation" />
+        <item index="1" class="java.lang.String" itemvalue="Python.SegregationModel" />
+        <item index="2" class="java.lang.String" itemvalue="Python.GameOfLife" />
+        <item index="3" class="java.lang.String" itemvalue="Python.GameofLifeSimulation" />
+        <item index="4" class="java.lang.String" itemvalue="Python.pygameCheck" />
       </list>
     </recent_temporary>
   </component>
@@ -485,7 +485,7 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="150" y="162" width="1400" height="862" extended-state="0" />
+    <frame x="87" y="87" width="1400" height="862" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24945612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -831,7 +831,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gameOfLife_fdbk_CW.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-183">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -839,8 +839,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GameofLifeSimulation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="387">
+          <caret line="46" column="15" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
           <folding>
             <element signature="e#43#56#0" expanded="true" />
           </folding>
@@ -849,17 +849,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GameOfLife.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="103" column="12" selection-start-line="103" selection-start-column="12" selection-end-line="103" selection-end-column="12" />
+        <state relative-caret-position="1037">
+          <caret line="78" column="14" selection-start-line="78" selection-start-column="14" selection-end-line="78" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SegregationModel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+        <state relative-caret-position="2138">
+          <caret line="163" column="52" selection-start-line="163" selection-start-column="52" selection-end-line="163" selection-end-column="52" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SegregationSimulation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+          <folding>
+            <element signature="e#43#56#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

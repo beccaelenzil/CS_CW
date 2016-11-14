@@ -104,6 +104,45 @@ def emptySpaces(A):
 #printBoard(Z)
 #print emptySpaces(Z)
 
+
+def countNeighbors(row,col,A):
+    sameNeighbor = -1
+    totalNeighbor = -1
+
+   # number of alike neighbors/number of unalike neighbors+number of alike neighbors
+    for r in range(row-1, row+2):
+        for c in range(col-1,col+2):
+            if A[row][col] == '0':
+                return 'base is 0'
+            else:
+                if A[r][c]!='0':
+                    totalNeighbor += 1
+                if A[r][c] == A[row][col]:
+                    sameNeighbor += 1
+    return sameNeighbor and totalNeighbor
+
+def segregationIndex(height,width,A):
+    """
+    takes in a matrix and returns a segregation index
+    """
+    segregation = copy(A)
+    segregationList = []
+
+    for row in range(height):
+        for col in range(width):
+            if A[row][col] != ' ':
+                [sameNeighbors, totalNeighbors] = countNeighbors(row,col,A)
+                segregation[row][col] = float(sameNeighbors)/float(totalNeighbors)
+                # I could make a heat map of segregation
+
+                # put it into a list so we can easily take the average
+                segregationList.append(segregation[row][col])
+
+    # take the average of the segregationIndex for each cell to get a single metric
+    segregationIndex = sum(segregationList)/len(segregationList)
+
+    return [segregation, segregationIndex]
+
 def copy(A):
     height = len(A)
     width = len(A[0])
@@ -134,4 +173,3 @@ A = unsegregatedBoard(11,11,.4,.4)
 printBoard(A)
 A = nextGeneration(A,.5)
 printBoard(A)
-
