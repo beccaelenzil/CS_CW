@@ -45,19 +45,24 @@ def unsegregatedBoard(width,height,percentX,percent0):
     numberO = width*height-numberY-numberX
     population = numberO*'0' + numberX*'X' + numberY*'Y'
     population = random.sample(population, width*height)
+    print population
     oiii=0
-    Z = createBoard(width,height)
-    for r in range(width):
-        for c in range(height):
+    Z = createBoard(width+2,height+2)
+    for r in range(1,width+1):
+        for c in range(1,height+1):
             Z[r][c] = population[oiii]
             oiii = oiii + 1
+
+    for r in range(0,width+2):
+        for c in range(0,height+2):
+
             if r == 0:
                 Z[r][c] = "*"
-            elif r == height-1:
+            elif r == height+1:
                 Z[r][c] = "*"
             elif c == 0:
                 Z[r][c] = ">"
-            elif c == width-1:
+            elif c == width+1:
                 Z[r][c] = "<"
 
 
@@ -81,7 +86,11 @@ def SimilarNeighborsPercent(row,col,A):
                     totalNeighborCount += 1
                 if A[r][c] == A[row][col]:
                     alikeNeighborCount += 1
-    return float(alikeNeighborCount)/totalNeighborCount
+
+    if totalNeighborCount != 0:
+        return float(alikeNeighborCount)/totalNeighborCount
+    else:
+        return 2
 
 
 #Z = unsegregatedBoard(5,5,0.30,.25)
@@ -115,7 +124,7 @@ def countNeighbors(row,col,A):
             if A[row][col] == '0':
                 return 'base is 0'
             else:
-                if A[r][c]!='0':
+                if A[r][c] =='X' or A[r][c] =='Y':
                     totalNeighbor += 1
                 if A[r][c] == A[row][col]:
                     sameNeighbor += 1
@@ -128,9 +137,9 @@ def segregationIndex(height,width,A):
     segregation = copy(A)
     segregationList = []
 
-    for row in range(height):
-        for col in range(width):
-            if A[row][col] != ' ':
+    for row in range(1,height-1):
+        for col in range(1,width-1):
+            if A[row][col] == 'X' or A[row][col] == 'Y':
                 [sameNeighbors, totalNeighbors] = countNeighbors(row,col,A)
                 segregation[row][col] = float(sameNeighbors)/float(totalNeighbors)
                 # I could make a heat map of segregation
@@ -157,19 +166,28 @@ def nextGeneration(A,thresh):
     width = len(A[0])
     newA = copy(A)
     emptyList = random.sample(emptySpaces(A), len(emptySpaces(A)))
-    print emptyList
+    #print emptyList
     i=0
     for row in range(1,height-1):
         for col in range(1,width-1):
             if SimilarNeighborsPercent(row,col,A)< thresh and i<len(emptyList):
-                newA[row][col] = 0
+                newA[row][col] = '0'
                 newA[emptyList[i][0]][emptyList[i][1]] = A[row][col]
                 i+=1
-    return newA
+    static = (newA == A)
+    return [static, newA]
 
-#Take boarder out of neighbor count
-
-A = unsegregatedBoard(11,11,.4,.4)
+"""
+A = unsegregatedBoard(12,12,.4,.4)
 printBoard(A)
-A = nextGeneration(A,.5)
-printBoard(A)
+static = False
+i = 0
+generationCount = 1
+while static == False and i<100:
+    [static,A] = nextGeneration(A,.5)
+    printBoard(A)
+    print " "
+    i+=1
+    generationCount+=1
+print generationCount
+"""
