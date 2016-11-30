@@ -40,6 +40,12 @@ I = createBoard(5,5)
 #printBoard(I)
 
 def unsegregatedBoard(width,height,percentX,percent0):
+    """
+    Given width, height, percentX, and percent0, unsegregatedBoard
+    randomly creates a board with the percentages of each type of
+    cell given.
+
+    """
     numberX = int(width*height*percentX)
     numberY = int(width*height*percent0)
     numberO = width*height-numberY-numberX
@@ -75,7 +81,10 @@ def unsegregatedBoard(width,height,percentX,percent0):
 def SimilarNeighborsPercent(row,col,A):
     alikeNeighborCount = -1
     totalNeighborCount = -1
-
+    """
+    finds the percentage of neighbors similar to a given cell
+    (row,col) in the board, A.
+    """
    # number of alike neighbors/number of unalike neighbors+number of alike neighbors
     for r in range(row-1, row+2):
         for c in range(col-1,col+2):
@@ -98,6 +107,9 @@ def SimilarNeighborsPercent(row,col,A):
 #print SimilarNeighborsPercent(1,1,Z)
 
 def emptySpaces(A):
+    """
+    Prints the locations of empty spaces in the board, A
+    """
     L = []
     h = len(A)
     w = len(A[0])
@@ -117,7 +129,9 @@ def emptySpaces(A):
 def countNeighbors(row,col,A):
     sameNeighbor = -1
     totalNeighbor = -1
-
+    """
+    finds number of alike neighbors and number of total neighbors
+    """
    # number of alike neighbors/number of unalike neighbors+number of alike neighbors
     for r in range(row-1, row+2):
         for c in range(col-1,col+2):
@@ -152,6 +166,9 @@ def segregationIndex(height,width,A):
     return [segregation, segregationI]
 
 def copy(A):
+    """
+    Makes a copy of the matrix, A
+    """
     height = len(A)
     width = len(A[0])
     newA = createBoard(width,height)
@@ -161,6 +178,10 @@ def copy(A):
     return newA
 
 def nextGeneration(A,thresh):
+    """
+    Makes a new board/generation based on the given board, A and
+    the given threshold.
+    """
     height = len(A)
     width = len(A[0])
     newA = copy(A)
