@@ -11,9 +11,9 @@ width = 50
 height = 50
 cell_size = 9
 spacing = 1
-percentX = .2
-percentY = .2
-thresh = .1
+percentX = .4
+percentY = .4
+thresh = .6
 
 # Define some colors
 BLACK = (0, 0, 0)
@@ -58,7 +58,7 @@ A = unsegregatedBoard(width,height,percentX,percentY)
 drawBoard(A,width,height,cell_size,spacing)
 pygame.display.flip()
 static = False
-generationCount = 1
+
 # -------- Main Program Loop -----------
 while not done:
     # --- Main event loop
@@ -66,18 +66,10 @@ while not done:
         #generationCount= generationCount+1
         if event.type == pygame.QUIT:
             done = True
-
     drawBoard(A,width,height,cell_size,spacing)
     [static,A] = nextGeneration(A,thresh)
-    generationCount = generationCount+1
 
-    #while static == False:
-    #    generationCount = generationCount+1
-    #    [static,A] = nextGeneration(A,thresh)
-    #    print generationCount
-    #while static == True:
-     #   segregationIndex(width,height,A)
-
+    #print segregationIndex(width,height,A)
 
     # --- Go ahead and update the screen with what we've drawn.
     pygame.display.flip()

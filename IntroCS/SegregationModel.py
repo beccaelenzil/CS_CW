@@ -45,7 +45,7 @@ def unsegregatedBoard(width,height,percentX,percent0):
     numberO = width*height-numberY-numberX
     population = numberO*'0' + numberX*'X' + numberY*'Y'
     population = random.sample(population, width*height)
-    print population
+    #print population
     oiii=0
     Z = createBoard(width+2,height+2)
     for r in range(1,width+1):
@@ -128,29 +128,28 @@ def countNeighbors(row,col,A):
                     totalNeighbor += 1
                 if A[r][c] == A[row][col]:
                     sameNeighbor += 1
-    return sameNeighbor and totalNeighbor
+    return [sameNeighbor,totalNeighbor]
 
 def segregationIndex(height,width,A):
     """
     takes in a matrix and returns a segregation index
     """
-    segregation = copy(A)
     segregationList = []
 
     for row in range(1,height-1):
         for col in range(1,width-1):
             if A[row][col] == 'X' or A[row][col] == 'Y':
                 [sameNeighbors, totalNeighbors] = countNeighbors(row,col,A)
-                segregation[row][col] = float(sameNeighbors)/float(totalNeighbors)
+                segregation = float(sameNeighbors)/float(totalNeighbors)
                 # I could make a heat map of segregation
 
                 # put it into a list so we can easily take the average
-                segregationList.append(segregation[row][col])
+                segregationList.append(segregation)
 
     # take the average of the segregationIndex for each cell to get a single metric
-    segregationIndex = sum(segregationList)/len(segregationList)
+    segregationI = sum(segregationList)/len(segregationList)
 
-    return [segregation, segregationIndex]
+    return [segregation, segregationI]
 
 def copy(A):
     height = len(A)
@@ -177,17 +176,32 @@ def nextGeneration(A,thresh):
     static = (newA == A)
     return [static, newA]
 
-"""
-A = unsegregatedBoard(12,12,.4,.4)
-printBoard(A)
-static = False
-i = 0
-generationCount = 1
-while static == False and i<100:
-    [static,A] = nextGeneration(A,.5)
-    printBoard(A)
-    print " "
-    i+=1
-    generationCount+=1
-print generationCount
-"""
+##A = unsegregatedBoard(12,12,.4,.4)
+#[segregation, segregationI] = segregationIndex(12,12,A)
+#print segregationI
+
+
+generationCountList = []
+segIList = []
+
+for k in range(1):
+    A = unsegregatedBoard(50,50,.2,.2)
+    #printBoard(A)
+    static = False
+    generationCount = 0
+    #print k
+    while static == False and generationCount <1000:
+        [static,A] = nextGeneration(A,.8)
+        #printBoard(A)
+        #print " "
+        generationCount+=1
+        #print generationCount
+
+    generationCountList.append(generationCount)
+    [segregation, segregationI] = segregationIndex(12,12,A)
+    segIList.append(segregationI)
+
+print sum(generationCountList)/len(generationCountList)
+print sum(segIList)/len(segIList)
+
+
