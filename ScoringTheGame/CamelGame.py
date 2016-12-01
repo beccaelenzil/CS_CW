@@ -17,7 +17,7 @@ def Camel():
     nativeDistance = 20
     drinksLeft = 3
     done = False
-    Oasis = random.randint(0,19)
+    oasisNumber = random.randint(0,19)
 
     while done == False:
         print 'A: Drink from your canteen.'
@@ -31,7 +31,7 @@ def Camel():
         choice = choice.upper()
         print ' '
         MaybeOasis = random.randint(0,19)
-        if MaybeOasis == Oasis:
+        if MaybeOasis == oasisNumber:
             print 'You have found an Oasis. Your water has been refilled'
             print ' '
             drinksLeft = 3
@@ -45,7 +45,6 @@ def Camel():
                 print ' '
         elif choice == 'B':
             distanceB = random.randint(5,12)
-            #Do I have to reset this or does it make a different random integer every time?
             milesTraveled = milesTraveled + distanceB
             camelTiredness = camelTiredness + 1
             thirst = thirst + 1

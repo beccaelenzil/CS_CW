@@ -205,7 +205,8 @@ def nextGeneration(A,thresh):
 generationCountList = []
 segIList = []
 
-for k in range(1):
+"""
+for k in range(100):
     A = unsegregatedBoard(50,50,.2,.2)
     #printBoard(A)
     static = False
@@ -225,4 +226,4 @@ for k in range(1):
 print sum(generationCountList)/len(generationCountList)
 print sum(segIList)/len(segIList)
 
-
+"""

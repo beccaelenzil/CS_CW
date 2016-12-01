@@ -13,7 +13,7 @@ cell_size = 9
 spacing = 1
 percentX = .2
 percentY = .2
-thresh = .1
+thresh = .8
 
 # Define some colors
 BLACK = (0, 0, 0)
