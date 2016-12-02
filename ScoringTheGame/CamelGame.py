@@ -40,6 +40,8 @@ def Camel():
             if drinksLeft > 0:
                 drinksLeft = drinksLeft - 1
                 thirst = 0
+                print 'Drinks left in your canteen: ', drinksLeft
+                print ' '
             else:
                 print 'None left.. Try something else'
                 print ' '
@@ -73,34 +75,50 @@ def Camel():
         elif choice == 'Q':
             done = True
         elif choice not in ['A','B','C','D','E','Q']:
-            "Next time, please choose one of the options"
+            "Next time, please choose one of the options."
             print ' '
 
         if camelTiredness > 5 and camelTiredness <= 8:
-            print 'your camel is tired'
+            print 'Your camel is tired. If you do not rest him soon, he will die.'
             print ' '
         elif camelTiredness > 8:
-            print 'your camel is dead'
+            print 'You overworked your camel and he died.'
             print ' '
             print 'Game Over'
             done = True
-        if thirst > 4 and thirst <=6:
-            print 'you are thirsty'
+
+
+        if thirst > 4 and thirst <=6 and done == False:
+            print 'You are thirsty. If you do not drink from your canteen soon, you will die.'
             print ' '
-        elif thirst > 6:
-            print 'you died of thirst'
+        elif thirst > 6 and done == False:
+            print 'You died of thirst.'
+            print ' '
             print 'Game Over'
             done = True
-        if nativeDistance == 0:
-            print 'the natives caught you!'
+
+        if nativeDistance <= 0 and done == False:
+            print 'The natives caught you!'
+            print ' '
             print 'Game Over'
             done = True
-        elif nativeDistance < 10:
+        elif nativeDistance < 10 and done == False:
             print 'the natives are getting close'
             print ' '
-        if milesTraveled >= 200:
+        if milesTraveled >= 250:
             print 'You Win!'
-
             done = True
+        if done == True:
+            playAgain()
+
+def playAgain():
+    print ' '
+    userChoice = raw_input('Would you like to play again? ')
+    userChoice = userChoice.upper()
+    if userChoice == 'YES':
+        Camel()
+    elif userChoice == 'NO':
+        print 'Bye'
+
 
 instructions()

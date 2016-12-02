@@ -11,9 +11,9 @@ width = 50
 height = 50
 cell_size = 9
 spacing = 1
-percentX = .2
-percentY = .2
-thresh = .8
+percentX = .4
+percentY = .4
+thresh = .7
 
 # Define some colors
 BLACK = (0, 0, 0)
