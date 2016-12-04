@@ -35,6 +35,8 @@ def Camel():
             print 'You have found an Oasis. Your water has been refilled'
             print ' '
             drinksLeft = 3
+            thirst = 0
+            camelTiredness = 0
 
         if choice == 'A':
             if drinksLeft > 0:
@@ -105,7 +107,7 @@ def Camel():
         elif nativeDistance < 10 and done == False:
             print 'the natives are getting close'
             print ' '
-        if milesTraveled >= 250:
+        if milesTraveled >= 200:
             print 'You Win!'
             done = True
         if done == True:

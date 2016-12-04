@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eacc368-f998-4d20-983f-dd796855820c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntroCS/SegregationSimulation.py" afterPath="$PROJECT_DIR$/IntroCS/SegregationSimulation.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScoringTheGame/CamelGame.py" afterPath="$PROJECT_DIR$/ScoringTheGame/CamelGame.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScoringTheGame/log.txt" afterPath="$PROJECT_DIR$/ScoringTheGame/log.txt" />
     </list>
     <ignored path="IntroCS_CW.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,21 +33,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="log.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="log.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ScoringTheGame/log.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+            <state relative-caret-position="17">
+              <caret line="1" column="79" selection-start-line="1" selection-start-column="79" selection-end-line="1" selection-end-column="79" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CamelGame.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CamelGame.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ScoringTheGame/CamelGame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1148">
-              <caret line="94" column="39" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
+            <state relative-caret-position="493">
+              <caret line="109" column="30" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ch5Tutorial.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScoringTheGame/Ch5Tutorial.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="39" column="54" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -111,10 +121,11 @@
         <option value="$PROJECT_DIR$/SegregationSimulation.py" />
         <option value="$PROJECT_DIR$/SegregationModel.py" />
         <option value="$PROJECT_DIR$/VISUALSegregationModel.py" />
-        <option value="$PROJECT_DIR$/ScoringTheGame/log.txt" />
         <option value="$PROJECT_DIR$/IntroCS/SegregationModel.py" />
         <option value="$PROJECT_DIR$/IntroCS/SegregationSimulation.py" />
         <option value="$PROJECT_DIR$/ScoringTheGame/CamelGame.py" />
+        <option value="$PROJECT_DIR$/ScoringTheGame/Ch5Tutorial.py" />
+        <option value="$PROJECT_DIR$/ScoringTheGame/log.txt" />
       </list>
     </option>
   </component>
@@ -177,7 +188,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="IntroCS" />
+              <option name="myItemId" value="ScoringTheGame" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -194,7 +205,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="rev&#9;null&#9;null" />
   </component>
-  <component name="RunManager" selected="Python.CamelGame">
+  <component name="RunManager" selected="Python.Ch5Tutorial">
     <configuration default="false" name="SegregationModel" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -208,23 +219,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="IntroCS_CW" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SegregationModel.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="SegregationSimulation" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="IntroCS_CW" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SegregationSimulation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -276,6 +270,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="IntroCS_CW" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/IntroCS/SegregationSimulation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Ch5Tutorial" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ScoringTheGame" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="IntroCS_CW" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScoringTheGame/Ch5Tutorial.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -429,18 +440,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.SegregationModel" />
-      <item index="1" class="java.lang.String" itemvalue="Python.SegregationSimulation" />
-      <item index="2" class="java.lang.String" itemvalue="Python.VISUALSegregationModel" />
-      <item index="3" class="java.lang.String" itemvalue="Python.CamelGame" />
-      <item index="4" class="java.lang.String" itemvalue="Python.SegregationSimulation (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.VISUALSegregationModel" />
+      <item index="2" class="java.lang.String" itemvalue="Python.CamelGame" />
+      <item index="3" class="java.lang.String" itemvalue="Python.SegregationSimulation (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Ch5Tutorial" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.CamelGame" />
-        <item index="1" class="java.lang.String" itemvalue="Python.SegregationSimulation (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Python.VISUALSegregationModel" />
-        <item index="3" class="java.lang.String" itemvalue="Python.SegregationModel" />
-        <item index="4" class="java.lang.String" itemvalue="Python.SegregationSimulation" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Ch5Tutorial" />
+        <item index="1" class="java.lang.String" itemvalue="Python.CamelGame" />
+        <item index="2" class="java.lang.String" itemvalue="Python.SegregationSimulation (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.VISUALSegregationModel" />
+        <item index="4" class="java.lang.String" itemvalue="Python.SegregationModel" />
       </list>
     </recent_temporary>
   </component>
@@ -495,14 +506,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/problemSet2Feedback_CW.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RecursionPSFeedback_CW.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -822,14 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScoringTheGame/log.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/VISUALSegregationModel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
@@ -856,8 +851,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ScoringTheGame/CamelGame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1148">
-          <caret line="94" column="39" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
+        <state relative-caret-position="493">
+          <caret line="109" column="30" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Ch5Tutorial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="39" column="54" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="79" selection-start-line="1" selection-start-column="79" selection-end-line="1" selection-end-column="79" />
           <folding />
         </state>
       </provider>

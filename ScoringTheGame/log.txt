@@ -1,8 +1,5 @@
 Week 1 (11/30-12/2)
-At the moment, I'm making an outcome for if the user decides to stop for the night
-I have to fix native distance
-Also i don't know get the random chance thing
-Miles traveled each move is confusing too
+I worked on and completed the camel game. I also began to learn about graphics.
 Week 2 (12/5-12/11)
 
 Week 3 (12/12 - 12/16)
