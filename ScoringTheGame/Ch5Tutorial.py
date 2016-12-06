@@ -1,3 +1,4 @@
+import math
 import pygame
 pygame.init()
 
@@ -6,6 +7,7 @@ WHITE=(255,255,255)
 GREEN=(0,255,0)
 RED=(255,0,0)
 BLUE=(0,0,255)
+SEACOLOR = (18,116,196)
 
 size = (700, 500)
 screen = pygame.display.set_mode(size)
@@ -36,8 +38,23 @@ while not done:
     # First, clear the screen to white. Don't put other drawing commands
     # above this, or they will be erased with this command.
     screen.fill(WHITE)
-    pygame.draw.line(screen, GREEN, [0, 0], [200,200], 1)
-    pygame.draw.rect(screen, RED, [55, 50, 20, 25], 0)
+    """
+    pygame.draw.line(screen, BLACK, [0, 92], [600,500], 2)
+    pygame.draw.line(screen, BLACK, [0, -7], [700, 465], 2)
+    pygame.draw.line(screen, BLACK, [250,-7], [700, 298], 2)
+    pygame.draw.line(screen, BLACK, [250,93], [700,395], 2)
+
+    x_offset = 20
+    y_offset = 20
+    for i in range(200):
+        x_offset+=25
+        y_offset+=17
+        pygame.draw.rect(screen,BLACK,[-45+x_offset,-45+y_offset,250,100],2)
+    """
+    pygame.draw.rect(screen, SEACOLOR, [0,0,700,500],85)
+    font = pygame.font.SysFont('audiowide', 25, True, False)
+    text = font.render("Shark.io",True,BLACK)
+    screen.blit(text, [290, 10])
     # --- Go ahead and update the screen with what we've drawn.
     pygame.display.flip()
 
