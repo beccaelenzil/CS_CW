@@ -51,10 +51,11 @@ while not done:
         y_offset+=17
         pygame.draw.rect(screen,BLACK,[-45+x_offset,-45+y_offset,250,100],2)
     """
-    pygame.draw.rect(screen, SEACOLOR, [0,0,700,500],85)
-    font = pygame.font.SysFont('audiowide', 25, True, False)
+    pygame.draw.rect(screen, SEACOLOR, [0,0,700,500],500)
+    font = pygame.font.SysFont('Times New Roman', 25, True, False)
     text = font.render("Shark.io",True,BLACK)
     screen.blit(text, [290, 10])
+    pygame.image.load("Minnow.jpg")
     # --- Go ahead and update the screen with what we've drawn.
     pygame.display.flip()
 
