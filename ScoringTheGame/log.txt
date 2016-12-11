@@ -5,7 +5,8 @@ Decided what game to make with some help from the kids in the music class. I wil
 a fish game where you start as a small fish. You can always eat smaller fish than you
 and must avoid bigger fish. Every time you eat a fish, you grow. When you touch a fish
 that's larger than you, you die.
-Learning graphics. Trying to make graphics for the cover of my game.
+I also continued to learning graphics and animation. First, I began to make graphics
+for the cover of my game. Then, I made an animation of a box bouncing off walls.
 Week 3 (12/12 - 12/16)
 
 Week 4 (1/3-1/8)
