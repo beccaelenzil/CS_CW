@@ -7,9 +7,6 @@ def instructions():
     print 'desert trek and out run the natives.'
     Camel()
 
-
-
-
 def Camel():
     milesTraveled = 0
     thirst = 0
@@ -121,6 +118,5 @@ def playAgain():
         Camel()
     elif userChoice == 'NO':
         print 'Bye'
-
 
 instructions()

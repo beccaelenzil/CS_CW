@@ -1,5 +1,14 @@
 Week 1 (11/30-12/2)
 I worked on and completed the camel game. I also began to learn about graphics.
+
+Camel game looks good!
+
+You don't need this code:
+if done == True:
+    playAgain()
+Instead, you can simply run your playAgain() function once
+done = True and you've excited the main game while loop
+
 Week 2 (12/5-12/11)
 Decided what game to make with some help from the kids in the music class. I will make
 a fish game where you start as a small fish. You can always eat smaller fish than you
@@ -7,6 +16,15 @@ and must avoid bigger fish. Every time you eat a fish, you grow. When you touch 
 that's larger than you, you die.
 I also continued to learning graphics and animation. First, I began to make graphics
 for the cover of my game. Then, I made an animation of a box bouncing off walls.
+
+Please create new .py files for each lab and tutorial you complete so I can track your progresss.
+Based on the work you've done, you should have
+Ch5Tutorial.py
+Ch11Tutorial.py
+Ch8Tutorial.py
+and Graphics.py
+
+
 Week 3 (12/12 - 12/16)
 
 Week 4 (1/3-1/8)
