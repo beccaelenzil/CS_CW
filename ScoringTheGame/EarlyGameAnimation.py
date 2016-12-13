@@ -11,7 +11,7 @@ SEACOLOR = (18,116,196)
 
 size = (700, 500)
 screen = pygame.display.set_mode(size)
-pygame.display.set_caption("Colin Learning Graphics")
+pygame.display.set_caption("Early Game Graphics")
 
 # Loop until the user clicks the close button.
 done = False
@@ -21,14 +21,14 @@ clock = pygame.time.Clock()
 
 
 
-minnow = pygame.image.load("Minnow.png")
+minnow = pygame.image.load("Minnow.png").convert()
+minnow.set_colorkey(WHITE)
+
+
 background = pygame.image.load("Background for Fish Game.jpg")
 
 # -------- Main Program Loop -----------
-rect_x = 50
-rect_y = 50
-rect_x_change = 5
-rect_y_change = 5
+
 while not done:
     # --- Main event loop
     for event in pygame.event.get(): # User did something
@@ -51,17 +51,7 @@ while not done:
     # above this, or they will be erased with this command.
     screen.fill(WHITE)
 
-    pygame.draw.line(screen, BLACK, [0, 92], [600,500], 2)
-    pygame.draw.line(screen, BLACK, [0, -7], [700, 465], 2)
-    pygame.draw.line(screen, BLACK, [250,-7], [700, 298], 2)
-    pygame.draw.line(screen, BLACK, [250,93], [700,395], 2)
 
-    x_offset = 20
-    y_offset = 20
-    for i in range(200):
-        x_offset+=25
-        y_offset+=17
-        pygame.draw.rect(screen,BLACK,[-45+x_offset,-45+y_offset,250,100],2)
 
     screen.blit(background, [0, 0])
     #pygame.draw.rect(screen, SEACOLOR, [0,0,700,500],500)
@@ -71,7 +61,6 @@ while not done:
     player_position = pygame.mouse.get_pos()
     x = player_position[0]
     y = player_position[1]
-    minnow.set_colorkey(WHITE)
 
     # Copy image to screen:
     screen.blit(minnow, [x-100, y-75])
@@ -80,7 +69,7 @@ while not done:
     pygame.display.flip()
 
     # --- Limit to 60 frames per second
-    clock.tick(60)
+    clock.tick(30)
 
 pygame.quit()
 
