@@ -26,6 +26,10 @@ and Graphics.py
 
 
 Week 3 (12/12 - 12/16)
+This week, I worked on some graphics for my game and I learned controllers and graphics
+in chapter 10.
+I downloaded a free trial of photoshop, learned how to use it at a low level, and made a
+background for my game. I also found good pictures for the fish in my game.
 
 Week 4 (1/3-1/8)
 

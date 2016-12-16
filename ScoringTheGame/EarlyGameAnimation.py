@@ -9,7 +9,7 @@ RED=(255,0,0)
 BLUE=(0,0,255)
 SEACOLOR = (18,116,196)
 
-size = (700, 500)
+size = (1200,715)
 screen = pygame.display.set_mode(size)
 pygame.display.set_caption("Early Game Graphics")
 
@@ -25,7 +25,7 @@ minnow = pygame.image.load("Minnow.png").convert()
 minnow.set_colorkey(WHITE)
 
 
-background = pygame.image.load("Background for Fish Game.jpg")
+background = pygame.image.load("GameBackground.png")
 
 # -------- Main Program Loop -----------
 
@@ -57,7 +57,7 @@ while not done:
     #pygame.draw.rect(screen, SEACOLOR, [0,0,700,500],500)
     font = pygame.font.SysFont('Times New Roman', 25, True, False)
     text = font.render("Shark.io",True,BLACK)
-    screen.blit(text, [290, 10])
+    screen.blit(text, [500, 10])
     player_position = pygame.mouse.get_pos()
     x = player_position[0]
     y = player_position[1]
@@ -69,7 +69,7 @@ while not done:
     pygame.display.flip()
 
     # --- Limit to 60 frames per second
-    clock.tick(30)
+    clock.tick(20)
 
 pygame.quit()
 
