@@ -1,4 +1,4 @@
-import math
+import random
 import pygame
 pygame.init()
 
@@ -29,6 +29,13 @@ piranha = pygame.image.load("Piranha.png")
 
 
 background = pygame.image.load("GameBackground.png")
+
+fish_list = []
+for i in range(15):
+    x = random.randrange(0,1277)
+    y = random.randrange(0, 717)
+    fish_list.append([x, y])
+
 
 
 # -------- Main Program Loop -----------
@@ -68,6 +75,20 @@ while not done:
 
     # Copy image to screen:
     screen.blit(minnow, [x-50, y-25])
+
+
+    for item in range(len(fish_list)):
+        piranha_speed = random.randint(5,15)
+        screen.blit(piranha, fish_list[item])
+        fish_list[item][0]+= piranha_speed
+        fish_list[item][1]+= random.randint(-3,3)
+
+        if fish_list[item][0] > 1277:
+            x = random.randrange(-50,-10)
+            y = random.randrange(0,680)
+            fish_list[item][1] = y
+            fish_list[item][0] = x
+
     # --- Go ahead and update the screen with what we've drawn.
 
     pygame.display.flip()
