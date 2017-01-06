@@ -9,9 +9,11 @@ RED=(255,0,0)
 BLUE=(0,0,255)
 SEACOLOR = (18,116,196)
 
-size = (1200,715)
+size = (1277,717)
 screen = pygame.display.set_mode(size)
 pygame.display.set_caption("Early Game Graphics")
+
+
 
 # Loop until the user clicks the close button.
 done = False
@@ -21,11 +23,13 @@ clock = pygame.time.Clock()
 
 
 
-minnow = pygame.image.load("Minnow.png").convert()
+minnow = pygame.image.load("Minnow.png")
 minnow.set_colorkey(WHITE)
+piranha = pygame.image.load("Piranha.png")
 
 
 background = pygame.image.load("GameBackground.png")
+
 
 # -------- Main Program Loop -----------
 
@@ -55,21 +59,21 @@ while not done:
 
     screen.blit(background, [0, 0])
     #pygame.draw.rect(screen, SEACOLOR, [0,0,700,500],500)
-    font = pygame.font.SysFont('Times New Roman', 25, True, False)
-    text = font.render("Shark.io",True,BLACK)
-    screen.blit(text, [500, 10])
+    font = pygame.font.SysFont('Arial', 25, True, False)
+    text = font.render("Minnow.io",True,BLACK)
+    screen.blit(text, [570, 10])
     player_position = pygame.mouse.get_pos()
     x = player_position[0]
     y = player_position[1]
 
     # Copy image to screen:
-    screen.blit(minnow, [x-100, y-75])
+    screen.blit(minnow, [x-50, y-25])
     # --- Go ahead and update the screen with what we've drawn.
 
     pygame.display.flip()
 
     # --- Limit to 60 frames per second
-    clock.tick(20)
+    clock.tick(10)
 
 pygame.quit()
 
