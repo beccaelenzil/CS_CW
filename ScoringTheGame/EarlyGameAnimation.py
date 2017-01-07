@@ -77,6 +77,10 @@ while not done:
     screen.blit(minnow, [x-50, y-25])
 
 
+    """
+    piranhas go horizontally across the screen with varying speeds
+    """
+    #pygame.transform.smoothscale(minnow,(25,25))
     for item in range(len(fish_list)):
         piranha_speed = random.randint(5,15)
         screen.blit(piranha, fish_list[item])
