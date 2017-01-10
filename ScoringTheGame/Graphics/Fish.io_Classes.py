@@ -31,6 +31,25 @@ piranha = pygame.image.load("Piranha.png")
 
 background = pygame.image.load("GameBackground.png")
 
+
+class Fish():
+    def __init__(self):
+        self.size = ""
+        self.speed = ""
+        self.position = ""
+        self.image = ""
+
+
+piranha1 = Fish()
+piranha1(10,5,(-10,random.randint(0,717)),pygame.image.load("Piranha.png"))
+print piranha1.size
+#piranha1.size = 10
+#piranha1.speed = 5
+#piranha1.position = (-10,random.randint(0,717))
+#piranha1.image = pygame.image.load("Piranha.png")
+
+
+
 fish_list = []
 for i in range(20):
     x = random.randrange(0,1277)
