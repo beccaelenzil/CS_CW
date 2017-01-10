@@ -1,5 +1,6 @@
 import random
 import pygame
+import time
 pygame.init()
 
 BLACK=(0,0,0)
@@ -31,7 +32,7 @@ piranha = pygame.image.load("Piranha.png")
 background = pygame.image.load("GameBackground.png")
 
 fish_list = []
-for i in range(15):
+for i in range(20):
     x = random.randrange(0,1277)
     y = random.randrange(0, 717)
     fish_list.append([x, y])
