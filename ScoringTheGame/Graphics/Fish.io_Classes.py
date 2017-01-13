@@ -22,7 +22,7 @@ done = False
 # Used to manage how fast the screen updates
 clock = pygame.time.Clock()
 
-
+pygame.mouse.set_visible(False)
 
 minnow = pygame.image.load("Minnow.png")
 minnow.set_colorkey(WHITE)
@@ -41,21 +41,70 @@ class Fish():
 
 
 piranha1 = Fish()
-piranha1(10,5,(-10,random.randint(0,717)),pygame.image.load("Piranha.png"))
-print piranha1.size
-#piranha1.size = 10
-#piranha1.speed = 5
-#piranha1.position = (-10,random.randint(0,717))
-#piranha1.image = pygame.image.load("Piranha.png")
+#piranha1=Fish(10,5,(-10,random.randint(0,717)),pygame.image.load("Piranha.png"))
+piranha1.size = 10
+piranha1.speed = 5
+piranha1.position = (-10,random.randint(0,717))
+piranha1.image = pygame.image.load("Piranha.png")
+piranha1.quantity = 10
+
+#print piranha1.image
+
+shark1 = Fish()
+shark1.size = 15
+shark1.speed = 3
+shark1.image = pygame.image.load("SHark1.png")
+shark1.position = (-10,random.randint(0,717))
+shark1.quantity = 10
+
+piranha2 = Fish()
+#piranha2=Fish(5,10,(-10,random.randint(0,717)),pygame.image.load("Piranha.png"))
+piranha1.size = 5
+piranha1.speed = 10
+piranha1.position = (-10,random.randint(0,717))
+piranha1.image = pygame.image.load("Piranha.png")
+
+minnow1 = Fish()
+minnow1.size = 2
+minnow1.speed = 15
+#minnow1.position = (1290,random.randint(0,717))
+#minnow1.image =
 
 
-
-fish_list = []
-for i in range(20):
+shark1_list = []
+for i in range(shark1.quantity):
+    i = random
     x = random.randrange(0,1277)
     y = random.randrange(0, 717)
-    fish_list.append([x, y])
+    shark1_list.append([x, y])
 
+piranha1_list = []
+for i in range(piranha1.quantity):
+    i = random
+    x = random.randrange(0,1277)
+    y = random.randrange(0, 717)
+    piranha1_list.append([x, y])
+
+fish_list = []
+for i in range(15):
+    i = random
+    x = random.randrange(0,1277)
+    y = random.randrange(0,717)
+    fish_list.append([x,y])
+
+
+def fishMoveRight(Fish):
+            for item in range(len(fish_list)):
+                Fish_speed = Fish.speed + random.randint(-5,5)
+                screen.blit(Fish.image, fish_list[item])
+                fish_list[item][0]+= Fish_speed
+                fish_list[item][1]+= random.randint(-3,3)
+
+                if fish_list[item][0] > 1277:
+                    x = random.randrange(-50,-10)
+                    y = random.randrange(0,680)
+                    fish_list[item][1] = y
+                    fish_list[item][0] = x
 
 
 # -------- Main Program Loop -----------
@@ -101,17 +150,14 @@ while not done:
     piranhas go horizontally across the screen with varying speeds
     """
     #pygame.transform.smoothscale(minnow,(25,25))
-    for item in range(len(fish_list)):
-        piranha_speed = random.randint(5,15)
-        screen.blit(piranha, fish_list[item])
-        fish_list[item][0]+= piranha_speed
-        fish_list[item][1]+= random.randint(-3,3)
 
-        if fish_list[item][0] > 1277:
-            x = random.randrange(-50,-10)
-            y = random.randrange(0,680)
-            fish_list[item][1] = y
-            fish_list[item][0] = x
+
+
+
+    fishMoveRight(piranha1)
+
+    fishMoveRight(shark1)
+
 
     # --- Go ahead and update the screen with what we've drawn.
 
