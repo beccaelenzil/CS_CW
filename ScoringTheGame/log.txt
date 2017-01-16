@@ -37,8 +37,15 @@ the mouse and was able to make other fish "swim" across the screen. I used the a
 tutorial in chapter 11 about snow as a base and I was able to convert it to horizontal
 movement, change the snow to fish, and make the fish move up and down and change speed
 as they swim.
-Week 5 (1/9-1/15)
+I also moved my work into folders for organization and learned about classes and methods.
 
+Week 5 (1/9-1/15)
+This week, I changed a lot of the code I had for my game to incorporate classes, which
+allows me to have fewer lines of code. Now, I have a class called Fish with each type
+of fish in it and a function that calls a group of whatever fish you choose to swim across the
+screen. I have piranhas and sharks swimming in both directions now. Next, I would like to try
+to make a function for the size of the fish so that I can make random sized fish swim across
+the screen.
 
 Week 6 (1/16-1/22)
 

@@ -26,7 +26,7 @@ clock = pygame.time.Clock()
 
 minnow = pygame.image.load("Minnow.png")
 minnow.set_colorkey(WHITE)
-piranha = pygame.image.load("Piranha.png")
+piranha = pygame.image.load("rightPiranha.png")
 
 
 background = pygame.image.load("GameBackground.png")

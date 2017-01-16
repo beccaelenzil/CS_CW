@@ -26,10 +26,11 @@ pygame.mouse.set_visible(False)
 
 minnow = pygame.image.load("Minnow.png")
 minnow.set_colorkey(WHITE)
-piranha = pygame.image.load("Piranha.png")
+piranha = pygame.image.load("rightPiranha.png")
 
 
 background = pygame.image.load("GameBackground.png")
+
 
 
 class Fish():
@@ -39,30 +40,70 @@ class Fish():
         self.position = ""
         self.image = ""
 
+leftShark_list = []
+for i in range(3):
+    i = random
+    x = random.randrange(0,1277)
+    y = random.randrange(0, 717)
+    leftShark_list.append([x, y])
 
-piranha1 = Fish()
-#piranha1=Fish(10,5,(-10,random.randint(0,717)),pygame.image.load("Piranha.png"))
-piranha1.size = 10
-piranha1.speed = 5
-piranha1.position = (-10,random.randint(0,717))
-piranha1.image = pygame.image.load("Piranha.png")
-piranha1.quantity = 10
+rightPiranha_list = []
+for i in range(5):
+    i = random
+    x = random.randrange(0,1277)
+    y = random.randrange(0, 717)
+    rightPiranha_list.append([x, y])
 
-#print piranha1.image
+leftPiranha_list = []
+for i in range(5):
+    i = random
+    x = random.randrange(0,1277)
+    y = random.randrange(0, 717)
+    leftPiranha_list.append([x, y])
 
-shark1 = Fish()
-shark1.size = 15
-shark1.speed = 3
-shark1.image = pygame.image.load("SHark1.png")
-shark1.position = (-10,random.randint(0,717))
-shark1.quantity = 10
+rightShark_list = []
+for i in range(3):
+    i = random
+    x = random.randrange(0,1277)
+    y = random.randrange(0, 717)
+    rightShark_list.append([x, y])
 
-piranha2 = Fish()
-#piranha2=Fish(5,10,(-10,random.randint(0,717)),pygame.image.load("Piranha.png"))
-piranha1.size = 5
-piranha1.speed = 10
-piranha1.position = (-10,random.randint(0,717))
-piranha1.image = pygame.image.load("Piranha.png")
+
+rightPiranha = Fish()
+#rightPiranha=Fish(10,5,(-10,random.randint(0,717)),pygame.image.load("rightPiranha.png"))
+rightPiranha.size = 10
+rightPiranha.speed = 5
+rightPiranha.position = (-10,random.randint(0,717))
+rightPiranha.image = pygame.image.load("rightPiranha.png")
+rightPiranha.quantity = 10
+rightPiranha.list = rightPiranha_list
+
+#print rightPiranha.image
+
+leftShark = Fish()
+leftShark.size = 15
+leftShark.speed = 5
+leftShark.image = pygame.image.load("leftShark.png")
+leftShark.position = (-10,random.randint(0,717))
+leftShark.quantity = 10
+leftShark.list = leftShark_list
+
+leftPiranha = Fish()
+#piranha2=Fish(5,10,(-10,random.randint(0,717)),pygame.image.load("rightPiranha.png"))
+leftPiranha.size = 5
+leftPiranha.speed = 10
+leftPiranha.position = (-10,random.randint(0,717))
+leftPiranha.image = pygame.image.load("leftPiranha.png")
+leftPiranha.list = leftPiranha_list
+
+rightShark = Fish()
+rightShark.size = 15
+rightShark.speed = 7.5
+rightShark.image = pygame.image.load("rightShark.png")
+rightShark.position = (-10,random.randint(0,717))
+rightShark.quantity = 5
+rightShark.list = rightShark_list
+
 
 minnow1 = Fish()
 minnow1.size = 2
@@ -71,41 +112,36 @@ minnow1.speed = 15
 #minnow1.image =
 
 
-shark1_list = []
-for i in range(shark1.quantity):
-    i = random
-    x = random.randrange(0,1277)
-    y = random.randrange(0, 717)
-    shark1_list.append([x, y])
 
-piranha1_list = []
-for i in range(piranha1.quantity):
-    i = random
-    x = random.randrange(0,1277)
-    y = random.randrange(0, 717)
-    piranha1_list.append([x, y])
 
-fish_list = []
-for i in range(15):
-    i = random
-    x = random.randrange(0,1277)
-    y = random.randrange(0,717)
-    fish_list.append([x,y])
+
 
 
 def fishMoveRight(Fish):
-            for item in range(len(fish_list)):
+            for item in range(len(Fish.list)):
                 Fish_speed = Fish.speed + random.randint(-5,5)
-                screen.blit(Fish.image, fish_list[item])
-                fish_list[item][0]+= Fish_speed
-                fish_list[item][1]+= random.randint(-3,3)
+                screen.blit(Fish.image, Fish.list[item])
+                Fish.list[item][0]+= Fish_speed
+                Fish.list[item][1]+= random.randint(-3,3)
 
-                if fish_list[item][0] > 1277:
+                if Fish.list[item][0] > 1277:
                     x = random.randrange(-50,-10)
                     y = random.randrange(0,680)
-                    fish_list[item][1] = y
-                    fish_list[item][0] = x
+                    Fish.list[item][1] = y
+                    Fish.list[item][0] = x
 
+def fishMoveLeft(Fish):
+            for item in range(len(Fish.list)):
+                Fish_speed = Fish.speed + random.randint(-5,5)
+                screen.blit(Fish.image, Fish.list[item])
+                Fish.list[item][0]-= Fish_speed
+                Fish.list[item][1]+= random.randint(-3,3)
+
+                if Fish.list[item][0] < -50:
+                    x = random.randrange(1277,1300)
+                    y = random.randrange(0,680)
+                    Fish.list[item][1] = y
+                    Fish.list[item][0] = x
 
 # -------- Main Program Loop -----------
 
@@ -154,9 +190,13 @@ while not done:
 
 
 
-    fishMoveRight(piranha1)
+    fishMoveRight(rightPiranha)
 
-    fishMoveRight(shark1)
+    fishMoveLeft(leftShark)
+
+    fishMoveLeft(leftPiranha)
+
+    fishMoveRight(rightShark)
 
 
     # --- Go ahead and update the screen with what we've drawn.
