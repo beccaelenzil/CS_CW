@@ -1,0 +1,64 @@
+1. My game is about fish. The player will begin controlling a small minnow.
+As a small fish, the player will have to dodge all of the big fish while trying
+to find smaller fish to eat. If the player's fish is bigger than the fish it
+touches, the player's fish will grow by the size of the fish it touched and the
+smaller fish will disappear. If the player touches a fish that is bigger than
+the one he is controlling, the game ends. All other fish in the game do not eat
+one another. The objects in the game will be different types of fish: The fish
+the player controls, minnows swimming across the screen, piranhas swimming
+across the screen, and sharks swimming across the screen. Music will be playing
+in the background of the game and it will get more intense as the game goes on.
+The main song will stop when the player dies and a short, sad song will play.
+Every time a fish eats another fish, a crunching sound will play.
+
+2.
+Nouns:
+
+player:
+minnow
+
+AI Fish:
+minnow
+piranha
+shark
+
+Verbs:
+
+Player:
+swim with mouse (player)
+eat smaller fish
+die
+grow
+
+AI Fish:
+swim right
+swim left
+eat smaller fish
+get eaten by player
+
+3.
+
+Player:
+    * Can eat anything if big enough
+        * grows
+    * Can get eaten by anything if small enough
+        * dies
+AI shark:
+    * eats player
+        * ends game
+    * gets eaten by player if player grows bigger than shark
+        * disappears
+AI piranha:
+    * eats player
+        * ends game
+    * gets eaten by player if player grows bigger than shark
+        * disappears
+AI minnow:
+    * eats player
+        * ends game
+    * gets eaten by player if player grows bigger than shark
+        * disappears
+
+
+
+
