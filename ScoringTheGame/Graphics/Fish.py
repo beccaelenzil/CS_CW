@@ -11,7 +11,7 @@ class Fish(pygame.sprite.Sprite):
 
 
 Plankton_list = []
-for i in range(3):
+for i in range(1):
     i = random
     x = random.randrange(0,1277)
     y = random.randrange(0, 717)
@@ -46,7 +46,14 @@ for i in range(3):
     y = random.randrange(0, 717)
     rightShark_list.append([x, y])
 
-    rightPiranha = Fish()
+
+plankton = Fish()
+plankton.position = (random.randrange(0,1277), random.randrange(0, 717))
+plankton.list = Plankton_list
+plankton.image = pygame.image.load("Plankton.png")
+
+
+rightPiranha = Fish()
 #rightPiranha=Fish(10,5,(-10,random.randint(0,717)),pygame.image.load("rightPiranha.png"))
 rightPiranha.size = 10
 rightPiranha.speed = 20
