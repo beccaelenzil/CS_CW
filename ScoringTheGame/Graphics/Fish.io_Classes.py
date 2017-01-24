@@ -38,14 +38,17 @@ background = pygame.image.load("SeaBackground.png")
 #aPlankton.set_colorkey(WHITE)
 
 
+
 def spawnPlankton(Fish):
-    for item in range(len(Fish.list)):
-        screen.blit(Fish.image, Fish.list[item])
-    if minnow == Fish.list[item]:
-        spawnPlankton(Fish)
+    aFish = Fish
+    print len(aFish.list)
+    for item in range(len(aFish.list)):
+        screen.blit(aFish.image, aFish.list[item])
+    if minnow == aFish.list[item]:
+        spawnPlankton(aFish)
 
 
-
+"""
 def fishMoveRight(Fish):
             for item in range(len(Fish.list)):
                 Fish_speed = Fish.speed + random.randint(-5,5)
@@ -72,6 +75,7 @@ def fishMoveLeft(Fish):
                     Fish.list[item][1] = y
                     Fish.list[item][0] = x
 
+"""
 # -------- Main Program Loop -----------
 
 while not done:
@@ -112,10 +116,10 @@ while not done:
     #pygame.transform.smoothscale(minnow,(25,25))
 
     spawnPlankton(Fish.plankton)
-    fishMoveRight(Fish.rightPiranha)
-    fishMoveLeft(Fish.leftShark)
-    fishMoveLeft(Fish.leftPiranha)
-    fishMoveRight(Fish.rightShark)
+    #fishMoveRight(Fish.rightPiranha)
+    #fishMoveLeft(Fish.leftShark)
+    #fishMoveLeft(Fish.leftPiranha)
+    #fishMoveRight(Fish.rightShark)
 
 
     pygame.display.flip()
