@@ -13,6 +13,8 @@ class Fish(pygame.sprite.Sprite):
         self.range = ""
 
 """
+aPlanktonFish = Fish()
+
 Plankton_list = []
 for i in range(1):
     i = random
@@ -55,17 +57,11 @@ class plankton(Fish):
         super(plankton,self).__init__()
         #plankton = Fish()
         plankton.position = (random.randrange(0,1277), random.randrange(0, 717))
-        plankton.range = 1
-        plankton.list = createFishList(plankton.range)
+        #plankton.range = 1
+        plankton.list = createFishList(1)
         plankton.image = pygame.image.load("Plankton.png")
 
-def createFishList(aRange):
-    list = []
-    for i in range(aRange):
-        #i = random
-        x = random.randrange(0,1277)
-        y = random.randrange(0, 717)
-        list.append([x, y])
+
 
 
 class rightPiranha(Fish):
@@ -75,10 +71,10 @@ class rightPiranha(Fish):
         #rightPiranha=Fish(10,5,(-10,random.randint(0,717)),pygame.image.load("rightPiranha.png"))
         rightPiranha.size = 10
         rightPiranha.speed = 20
-        rightPiranha.position = (-10,random.randint(0,717))
+        #rightPiranha.position = (-10,random.randint(0,717))
         rightPiranha.image = pygame.image.load("rightPiranha.png")
-        rightPiranha.quantity = 10
-        rightPiranha.list = createFishList(rightPiranha.range)
+        #rightPiranha.range = 10
+        rightPiranha.list = createFishList(10)
 
 
 class leftShark(Fish):
@@ -88,9 +84,9 @@ class leftShark(Fish):
         leftShark.size = 15
         leftShark.speed = 10
         leftShark.image = pygame.image.load("leftShark.png")
-        leftShark.position = (-10,random.randint(0,717))
-        leftShark.quantity = 10
-        leftShark.list = leftShark_list
+        #leftShark.position = (-10,random.randint(0,717))
+        #leftShark.range = 10
+        leftShark.list = createFishList(10)
 
 
 class leftPiranha(Fish):
@@ -100,9 +96,10 @@ class leftPiranha(Fish):
         #piranha2=Fish(5,10,(-10,random.randint(0,717)),pygame.image.load("rightPiranha.png"))
         leftPiranha.size = 5
         leftPiranha.speed = 15
-        leftPiranha.position = (-10,random.randint(0,717))
+        #leftPiranha.position = (-10,random.randint(0,717))
         leftPiranha.image = pygame.image.load("leftPiranha.png")
-        leftPiranha.list = leftPiranha_list
+        #leftPiranha.range = 5
+        leftPiranha.list = createFishList(5)
 
 class rightShark(Fish):
     def __init__(self):
@@ -111,9 +108,15 @@ class rightShark(Fish):
         rightShark.speed = 5
         rightShark.image = pygame.image.load("rightShark.png")
         rightShark.position = (-10,random.randint(0,717))
-        rightShark.quantity = 5
-        rightShark.list = rightShark_list
+        #rightShark.range = 5
+        rightShark.list = createFishList(5)
 
 
+def createFishList(aRange):
+    list = []
+    for i in range(aRange):
+        #i = random
+        x = random.randrange(0,1277)
+        y = random.randrange(0, 717)
+        list.append([x, y])
 
-print createFishList(5)
