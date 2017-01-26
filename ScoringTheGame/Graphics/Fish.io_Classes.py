@@ -22,14 +22,15 @@ done = False
 clock = pygame.time.Clock()
 
 pygame.mouse.set_visible(False)
-
-minnow = pygame.image.load("Minnow.png")
+#SmallFish = pygame.sprite.Sprite
+SmallFish = pygame.image.load("SmallFish.png")
 #user = pygame.image.load("SmallFish.png")
 #user.set_colorkey(WHITE)
-minnow.set_colorkey(WHITE)
+SmallFish.set_colorkey(WHITE)
 
 
-
+aPlankton = pygame.image.load("Plankton.png")
+aPlankton.set_colorkey(WHITE)
 
 #background = pygame.image.load("GameBackground.png")
 background = pygame.image.load("SeaBackground.png")
@@ -40,12 +41,10 @@ background = pygame.image.load("SeaBackground.png")
 
 
 def spawnPlankton(Fish):
-    aFish = Fish
-    print len(aFish.list)
-    for item in range(len(aFish.list)):
-        screen.blit(aFish.image, aFish.list[item])
-    if minnow == aFish.list[item]:
-        spawnPlankton(aFish)
+    for item in range(len(Fish.list)):
+        screen.blit(Fish.image, Fish.list[item])
+    if SmallFish == Fish.list[item]:
+        spawnPlankton(Fish)
 
 
 
@@ -85,6 +84,9 @@ while not done:
         if event.type == pygame.QUIT: # If user clicked close
             done = True # Flag that we are done so we exit this loop
 
+        #elif pygame.sprite.collide_rect(SmallFish, Fish):
+            #done = True
+
         elif event.type == pygame.KEYDOWN:
             print("User pressed a key.")
         elif event.type == pygame.KEYUP:
@@ -94,6 +96,7 @@ while not done:
             pygame.mixer.init
             pygame.mixer.music.load('laser5.ogg')
             pygame.mixer.music.play()
+
 
     screen.fill(WHITE)
 
@@ -107,20 +110,21 @@ while not done:
     y = player_position[1]
 
     # Copy image to screen:
-    #screen.blit(minnow, [x-50, y-25])
-    screen.blit(minnow, [x-50, y-25])
+    #screen.blit(SmallFish, [x-50, y-25])
+    screen.blit(SmallFish, [x-50, y-25])
 
 
 
-    #pygame.transform.smoothscale(minnow,(25,25))
+    #pygame.transform.smoothscale(SmallFish,(25,25))
 
-    #spawnPlankton(Fish.plankton)
+    spawnPlankton(Fish.plankton)
 
 
     fishMoveRight(Fish.rightPiranha)
     fishMoveLeft(Fish.leftShark)
     fishMoveLeft(Fish.leftPiranha)
     fishMoveRight(Fish.rightShark)
+
 
 
     pygame.display.flip()

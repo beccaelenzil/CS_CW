@@ -21,7 +21,7 @@ clock = pygame.time.Clock()
 
 
 
-minnow = pygame.image.load("Minnow.png")
+SmallFish = pygame.image.load("SmallFish.png")
 background = pygame.image.load("Background for Fish Game.jpg")
 
 # -------- Main Program Loop -----------
@@ -71,10 +71,10 @@ while not done:
     player_position = pygame.mouse.get_pos()
     x = player_position[0]
     y = player_position[1]
-    minnow.set_colorkey(WHITE)
+    SmallFish.set_colorkey(WHITE)
 
     # Copy image to screen:
-    screen.blit(minnow, [x-100, y-75])
+    screen.blit(SmallFish, [x-100, y-75])
     # --- Go ahead and update the screen with what we've drawn.
 
     pygame.display.flip()

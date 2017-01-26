@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eacc368-f998-4d20-983f-dd796855820c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScoringTheGame/Graphics/Plankton.png" afterPath="$PROJECT_DIR$/ScoringTheGame/Graphics/Plankton.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScoringTheGame/Graphics/SmallFish.png" afterPath="$PROJECT_DIR$/ScoringTheGame/Graphics/SmallFish.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.io.py" afterPath="$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.io.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.io_Classes.py" afterPath="$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.io_Classes.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.py" afterPath="$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScoringTheGame/Tutorials/Animation.py" afterPath="$PROJECT_DIR$/ScoringTheGame/Tutorials/Animation.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScoringTheGame/Tutorials/Ch5Tutorial.py" afterPath="$PROJECT_DIR$/ScoringTheGame/Tutorials/Ch5Tutorial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScoringTheGame/Tutorials/myGameDesign" afterPath="$PROJECT_DIR$/ScoringTheGame/Tutorials/myGameDesign" />
     </list>
     <ignored path="IntroCS_CW.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,56 +31,80 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="log.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScoringTheGame/log.txt">
+      <file leaf-file-name="myGameDesign" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScoringTheGame/Tutorials/myGameDesign">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" column="89" selection-start-line="39" selection-start-column="89" selection-end-line="39" selection-end-column="89" />
+            <state relative-caret-position="17">
+              <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myGameDesign" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScoringTheGame/Tutorials/myGameDesign">
+      <file leaf-file-name="Fish.io_Classes.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.io_Classes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="170">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Animation.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScoringTheGame/Tutorials/Animation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
               <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fish.io_Classes.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.io_Classes.py">
+      <file leaf-file-name="Ch5Tutorial.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScoringTheGame/Tutorials/Ch5Tutorial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="374">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fish.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Fish.io.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.io.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SmallFish.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/SmallFish.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Plankton.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Plankton.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fish.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="884">
+              <caret line="53" column="29" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SegregationSimulation.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IntroCS/SegregationSimulation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-204">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -84,29 +116,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="leftPiranha.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/leftPiranha.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GameBackground.png" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/GameBackground.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Minnow.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Minnow.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rightPiranha.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/rightPiranha.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
@@ -161,10 +172,13 @@
         <option value="$PROJECT_DIR$/ScoringTheGame/Fish.io.py" />
         <option value="$PROJECT_DIR$/ScoringTheGame/Fish.io_Classes.py" />
         <option value="$PROJECT_DIR$/ScoringTheGame/log.txt" />
-        <option value="$PROJECT_DIR$/ScoringTheGame/Tutorials/myGameDesign" />
         <option value="$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.Library.py" />
-        <option value="$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.io_Classes.py" />
         <option value="$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.py" />
+        <option value="$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.io.py" />
+        <option value="$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.io_Classes.py" />
+        <option value="$PROJECT_DIR$/ScoringTheGame/Tutorials/Animation.py" />
+        <option value="$PROJECT_DIR$/ScoringTheGame/Tutorials/Ch5Tutorial.py" />
+        <option value="$PROJECT_DIR$/ScoringTheGame/Tutorials/myGameDesign" />
       </list>
     </option>
   </component>
@@ -199,38 +213,15 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches">
+        <subPane />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="IntroCS_CW" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 2.7.9 (/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7-32) &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IntroCS_CW" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 2.7.9 (/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7-32) &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-packages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -276,9 +267,6 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-      </pane>
-      <pane id="Scratches">
-        <subPane />
       </pane>
     </panes>
   </component>
@@ -561,6 +549,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29376602" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32706767" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42105263" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33493975" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -571,7 +560,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -583,10 +571,10 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32706767" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42105263" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31695333" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33493975" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29376602" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923833" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -617,8 +605,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/GuessMyRule.py" />
-    <entry file="file://$PROJECT_DIR$/listsAndStrings.py" />
     <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/twisted/web/test/test_proxy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8296">
@@ -689,13 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Tutorials/Ch5Tutorial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="75" column="27" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ScoringTheGame/Tutorials/Ch11Tutorial.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1870">
@@ -703,24 +682,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Tutorials/Animation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ScoringTheGame/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.io.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -763,14 +728,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Unedited sea background.png" />
-    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Tutorials/myGameDesign">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/GameBackground.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -790,24 +747,65 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-204">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.io_Classes.py">
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        <state relative-caret-position="884">
+          <caret line="53" column="29" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.py">
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Plankton.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/SmallFish.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.io.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state relative-caret-position="267">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Tutorials/Animation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Tutorials/Ch5Tutorial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Tutorials/myGameDesign">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.io_Classes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

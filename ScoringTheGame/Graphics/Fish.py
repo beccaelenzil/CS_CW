@@ -16,8 +16,8 @@ class Fish(pygame.sprite.Sprite):
 Plankton_list = []
 for i in range(1):
     i = random
-    x = random.randrange(0,1277)
-    y = random.randrange(0, 717)
+    x = random.randrange(100,1200)
+    y = random.randrange(50, 650)
     Plankton_list.append([x, y])
 
 
@@ -49,16 +49,14 @@ for i in range(3):
     y = random.randrange(0, 717)
     rightShark_list.append([x, y])
 
+WHITE = (255, 255, 255)
+aPlankton = pygame.image.load("Plankton.png")
+aPlankton.set_colorkey(WHITE)
 
-class plankton(Fish):
-    def __init__(self):
-        super(plankton,self).__init__()
-        #plankton = Fish()
-        plankton.position = (random.randrange(0,1277), random.randrange(0, 717))
-        #plankton.range = 1
-        plankton.list = createFishList(1)
-        plankton.image = pygame.image.load("Plankton.png")
-
+plankton = Fish()
+plankton.position = (random.randrange(0,1277), random.randrange(0, 717))
+plankton.list = Plankton_list
+plankton.image = aPlankton
 
 
 #class rightPiranha(Fish):

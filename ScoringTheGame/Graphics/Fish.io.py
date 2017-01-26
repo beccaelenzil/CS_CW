@@ -24,8 +24,8 @@ clock = pygame.time.Clock()
 
 
 
-minnow = pygame.image.load("Minnow.png")
-minnow.set_colorkey(WHITE)
+SmallFish = pygame.image.load("SmallFish.png")
+SmallFish.set_colorkey(WHITE)
 piranha = pygame.image.load("rightPiranha.png")
 
 
@@ -68,20 +68,20 @@ while not done:
     screen.blit(background, [0, 0])
     #pygame.draw.rect(screen, SEACOLOR, [0,0,700,500],500)
     font = pygame.font.SysFont('Arial', 25, True, False)
-    text = font.render("Minnow.io",True,BLACK)
+    text = font.render("SmallFish.io",True,BLACK)
     screen.blit(text, [570, 10])
     player_position = pygame.mouse.get_pos()
     x = player_position[0]
     y = player_position[1]
 
     # Copy image to screen:
-    screen.blit(minnow, [x-50, y-25])
+    screen.blit(SmallFish, [x-50, y-25])
 
 
     """
     piranhas go horizontally across the screen with varying speeds
     """
-    #pygame.transform.smoothscale(minnow,(25,25))
+    #pygame.transform.smoothscale(SmallFish,(25,25))
     for item in range(len(fish_list)):
         piranha_speed = random.randint(5,15)
         screen.blit(piranha, fish_list[item])
