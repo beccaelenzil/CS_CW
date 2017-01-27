@@ -22,10 +22,8 @@ done = False
 clock = pygame.time.Clock()
 
 pygame.mouse.set_visible(False)
-#SmallFish = pygame.sprite.Sprite
+
 SmallFish = pygame.image.load("SmallFish.png")
-#user = pygame.image.load("SmallFish.png")
-#user.set_colorkey(WHITE)
 SmallFish.set_colorkey(WHITE)
 
 
@@ -39,12 +37,6 @@ background = pygame.image.load("SeaBackground.png")
 #aPlankton.set_colorkey(WHITE)
 
 
-
-def spawnPlankton(Fish):
-    for item in range(len(Fish.list)):
-        screen.blit(Fish.image, Fish.list[item])
-    if SmallFish == Fish.list[item]:
-        spawnPlankton(Fish)
 
 
 
@@ -83,10 +75,6 @@ while not done:
     for event in pygame.event.get(): # User did something
         if event.type == pygame.QUIT: # If user clicked close
             done = True # Flag that we are done so we exit this loop
-
-        #elif pygame.sprite.collide_rect(SmallFish, Fish):
-            #done = True
-
         elif event.type == pygame.KEYDOWN:
             print("User pressed a key.")
         elif event.type == pygame.KEYUP:
@@ -110,10 +98,15 @@ while not done:
     y = player_position[1]
 
     # Copy image to screen:
-    #screen.blit(SmallFish, [x-50, y-25])
-    screen.blit(SmallFish, [x-50, y-25])
 
 
+    screen.blit(Fish.smallFish.image, [x-50, y-25])
+
+    def spawnPlankton(Fish):
+        for item in range(len(Fish.list)):
+            screen.blit(Fish.image, Fish.list[item])
+        if SmallFish == Fish.list[item]:
+            spawnPlankton(Fish)
 
     #pygame.transform.smoothscale(SmallFish,(25,25))
 
@@ -126,6 +119,20 @@ while not done:
     fishMoveRight(Fish.rightShark)
 
 
+    Fish.plankton.rect = Fish.plankton.image.get_rect()
+    #Fish.plankton.radius = Fish.plankton.image.get.radius()
+    Fish.smallFish.rect = Fish.smallFish.image.get_rect()
+    #print Fish.plankton.rect
+    #print Fish.smallFish.rect
+
+    #Fish.smallFish.radius = Fish.smallFish.image.get.radius()
+    def smallFishEat():
+        #if pygame.sprite.collide_circle(Fish.smallFish, Fish.plankton):
+        if pygame.sprite.collide_rect(Fish.smallFish, Fish.plankton):
+            spawnPlankton(Fish.plankton)
+            print "yes"
+
+    smallFishEat()
 
     pygame.display.flip()
 
