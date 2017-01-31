@@ -18,6 +18,8 @@ pygame.display.set_caption("Early Game Graphics")
 # Loop until the user clicks the close button.
 done = False
 
+aPlayer = Fish.Player(5,12)
+
 # Used to manage how fast the screen updates
 clock = pygame.time.Clock()
 
@@ -100,13 +102,12 @@ while not done:
     # Copy image to screen:
 
 
-    screen.blit(Fish.smallFish.image, [x-50, y-25])
+    screen.blit(aPlayer.image, [x-50, y-25])
 
     def spawnPlankton(Fish):
         for item in range(len(Fish.list)):
             screen.blit(Fish.image, Fish.list[item])
-        if SmallFish == Fish.list[item]:
-            spawnPlankton(Fish)
+
 
     #pygame.transform.smoothscale(SmallFish,(25,25))
 
@@ -119,20 +120,23 @@ while not done:
     fishMoveRight(Fish.rightShark)
 
 
-    Fish.plankton.rect = Fish.plankton.image.get_rect()
+    #Fish.plankton.rect = Fish.plankton.image.get_rect()
     #Fish.plankton.radius = Fish.plankton.image.get.radius()
-    Fish.smallFish.rect = Fish.smallFish.image.get_rect()
-    #print Fish.plankton.rect
-    #print Fish.smallFish.rect
+    #Fish.smallFish.rect = Fish.smallFish.image.get_rect()
+
+    #Fish.plankton.rect = pygame.Surface.get_rect(Fish.plankton.image)
+    #Fish.smallFish.rect = pygame.Surface.get_rect(Fish.smallFish.image)
+    print Fish.plankton.rect
+    print aPlayer.rect
 
     #Fish.smallFish.radius = Fish.smallFish.image.get.radius()
     def smallFishEat():
         #if pygame.sprite.collide_circle(Fish.smallFish, Fish.plankton):
-        if pygame.sprite.collide_rect(Fish.smallFish, Fish.plankton):
+        if pygame.sprite.collide_rect(aPlayer.rect, Fish.plankton.rect):
             spawnPlankton(Fish.plankton)
             print "yes"
 
-    smallFishEat()
+ #   smallFishEat()
 
     pygame.display.flip()
 
