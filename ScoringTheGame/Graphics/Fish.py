@@ -17,13 +17,6 @@ class Fish(pygame.sprite.Sprite):
 
 
 
-Plankton_list = []
-for i in range(1):
-    i = random
-    x = random.randrange(100,1200)
-    y = random.randrange(50, 650)
-    Plankton_list.append([x, y])
-
 
 leftShark_list = []
 for i in range(3):
@@ -59,7 +52,6 @@ aPlankton.set_colorkey(WHITE)
 
 plankton = Fish(10,5)
 plankton.position = (random.randrange(0,1277), random.randrange(0, 717))
-plankton.list = Plankton_list
 plankton.image = aPlankton
 plankton.width = 10
 plankton.height =5

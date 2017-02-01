@@ -25,8 +25,8 @@ clock = pygame.time.Clock()
 
 pygame.mouse.set_visible(False)
 
-SmallFish = pygame.image.load("SmallFish.png")
-SmallFish.set_colorkey(WHITE)
+#SmallFish = pygame.image.load("SmallFish.png")
+#SmallFish.set_colorkey(WHITE)
 
 
 aPlankton = pygame.image.load("Plankton.png")
@@ -35,9 +35,21 @@ aPlankton.set_colorkey(WHITE)
 #background = pygame.image.load("GameBackground.png")
 background = pygame.image.load("SeaBackground.png")
 
-#aPlankton = Fish()
+aPlankton = Fish.plankton
 #aPlankton.set_colorkey(WHITE)
 
+collision = False
+
+counter = 1
+def spawnPlankton(Fish):
+    i = counter
+    if i == 1:
+        screen.blit(Fish.image, (600,500))
+        i+=1
+    elif i > 1:
+        x = random.randrange(100,1200)
+        y = random.randrange(50, 650)
+        screen.blit(Fish.image, (x,y))
 
 
 
@@ -70,6 +82,10 @@ def fishMoveLeft(Fish):
                     Fish.list[item][1] = y
                     Fish.list[item][0] = x
 
+
+
+
+
 # -------- Main Program Loop -----------
 
 while not done:
@@ -86,11 +102,16 @@ while not done:
             pygame.mixer.init
             pygame.mixer.music.load('laser5.ogg')
             pygame.mixer.music.play()
-
+        elif collision == False:
+            screen.blit(Fish.plankton.image, (600,500))
+        elif collision == True:
+            x = random.randrange(100,1200)
+            y = random.randrange(50, 650)
+            screen.blit(Fish.plankton.image, (x,y))
 
     screen.fill(WHITE)
-
     screen.blit(background, [0, 0])
+
     #pygame.draw.rect(screen, SEACOLOR, [0,0,700,500],500)
     font = pygame.font.SysFont('Arial', 25, True, False)
     text = font.render("Fish.io",True,BLACK)
@@ -101,23 +122,15 @@ while not done:
 
     # Copy image to screen:
 
-
     screen.blit(aPlayer.image, [x-50, y-25])
 
-    def spawnPlankton(Fish):
-        for item in range(len(Fish.list)):
-            screen.blit(Fish.image, Fish.list[item])
+    spawnPlankton(aPlankton)
 
 
-    #pygame.transform.smoothscale(SmallFish,(25,25))
-
-    spawnPlankton(Fish.plankton)
-
-
-    fishMoveRight(Fish.rightPiranha)
-    fishMoveLeft(Fish.leftShark)
-    fishMoveLeft(Fish.leftPiranha)
-    fishMoveRight(Fish.rightShark)
+    #fishMoveRight(Fish.rightPiranha)
+    #fishMoveLeft(Fish.leftShark)
+    #fishMoveLeft(Fish.leftPiranha)
+    #fishMoveRight(Fish.rightShark)
 
 
     #Fish.plankton.rect = Fish.plankton.image.get_rect()
@@ -130,11 +143,10 @@ while not done:
     print aPlayer.rect
 
     #Fish.smallFish.radius = Fish.smallFish.image.get.radius()
-    def smallFishEat():
-        #if pygame.sprite.collide_circle(Fish.smallFish, Fish.plankton):
-        if pygame.sprite.collide_rect(aPlayer.rect, Fish.plankton.rect):
-            spawnPlankton(Fish.plankton)
-            print "yes"
+    #def smallFishEat():
+    #if pygame.sprite.collide_rect(aPlayer.rect, Fish.plankton.rect):
+     #   spawnPlankton(Fish.plankton)
+      #  print "yes"
 
  #   smallFishEat()
 
