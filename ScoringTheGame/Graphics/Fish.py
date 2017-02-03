@@ -16,8 +16,6 @@ class Fish(pygame.sprite.Sprite):
 
 
 
-
-
 leftShark_list = []
 for i in range(3):
     i = random
