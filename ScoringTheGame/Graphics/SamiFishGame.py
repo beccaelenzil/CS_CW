@@ -34,6 +34,9 @@ player_image.set_colorkey(WHITE)
 
 #eaten sound
 eaten_sound = pygame.mixer.Sound('laser5.ogg')
+background_music = pygame.mixer.Sound('BackgrounMusic.ogg')
+pygame.mixer.music.set_endevent(pygame.constants.USEREVENT)
+background_music.play()
 
 class Fish(pygame.sprite.Sprite):
     def __init__(self,aFishImage):
@@ -121,11 +124,15 @@ clock = pygame.time.Clock()
 
 eaten = False
 
+
 # -------- Main Program Loop -----------
 while not done:
+
     # User did something
     for event in pygame.event.get():
         # If user clicked close
+        if event.type == pygame.constants.USEREVENT:
+            pygame.mixer.music.play()
         if event.type == pygame.QUIT:
             # Flag that we are done so we exit this loop
             done = True

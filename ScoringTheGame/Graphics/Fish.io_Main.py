@@ -9,7 +9,7 @@ class Fish(pygame.sprite.Sprite):
         super(self.__class__,self).__init__()
         self.size = ""
         self.speed = ""
-        self.position = ""
+        self.position =cor ""
         self.image = pygame.Surface([width, height])
         self.rect = self.image.get_rect()
         self.list = []
