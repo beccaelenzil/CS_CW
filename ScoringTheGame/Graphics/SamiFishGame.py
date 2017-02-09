@@ -21,7 +21,7 @@ pygame.init()
 screen_width = 1277
 screen_height = 717
 screen = pygame.display.set_mode([screen_width, screen_height])
-pygame.display.set_caption("Fish Game Sami")
+pygame.display.set_caption("Fish Game")
 background = pygame.image.load("SeaBackground.png")
 
 #plankton image
@@ -35,7 +35,7 @@ player_image.set_colorkey(WHITE)
 #eaten sound
 eaten_sound = pygame.mixer.Sound('laser5.ogg')
 background_music = pygame.mixer.Sound('BackgrounMusic.ogg')
-pygame.mixer.music.set_endevent(pygame.constants.USEREVENT)
+#pygame.mixer.music.set_endevent(pygame.constants.USEREVENT)
 background_music.play()
 
 class Fish(pygame.sprite.Sprite):
@@ -66,10 +66,10 @@ class Fish(pygame.sprite.Sprite):
         """ Called each frame. """
 
         # Move block down one pixel
-        self.rect.y += 1
+        self.rect.y += 20
 
         # If block is too far down, reset to top of screen.
-        if self.rect.y > 410:
+        if self.rect.y > 717:
             self.reset_pos()
 
 
@@ -99,7 +99,7 @@ all_sprites_list = pygame.sprite.Group()
 #def fishLists(Fish,Image, range)
 
 
-for i in range(2):
+for i in range(1):
     # This represents a plankton
     plankton = Fish(plankton_image)
 
@@ -131,8 +131,8 @@ while not done:
     # User did something
     for event in pygame.event.get():
         # If user clicked close
-        if event.type == pygame.constants.USEREVENT:
-            pygame.mixer.music.play()
+        #if event.type == pygame.constants.USEREVENT:
+            #pygame.mixer.music.play()
         if event.type == pygame.QUIT:
             # Flag that we are done so we exit this loop
             done = True
@@ -163,7 +163,7 @@ while not done:
     all_sprites_list.draw(screen)
 
     # Limit to 20 frames per second
-    clock.tick(20)
+    clock.tick(10)
 
     # Go ahead and update the screen with what we've drawn.
     pygame.display.flip()
