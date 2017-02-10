@@ -23,15 +23,22 @@ screen_height = 717
 screen = pygame.display.set_mode([screen_width, screen_height])
 pygame.display.set_caption("Fish Game")
 background = pygame.image.load("SeaBackground.png")
-
+pygame.mouse.set_visible(False)
 #plankton image
 plankton_image = pygame.image.load("Plankton.png")
 plankton_image.set_colorkey(WHITE)
+
+rightPiranha_image = pygame.image.load("rightPiranha.png")
+rightPiranha_image.set_colorkey(WHITE)
 
 #player image
 player_image = pygame.image.load("SmallFish.png")
 player_image.set_colorkey(WHITE)
 
+leftShark_image = pygame.image.load("leftShark.png")
+
+#piranha_image
+leftPiranha_image = pygame.image.load("leftPiranha.png")
 #eaten sound
 eaten_sound = pygame.mixer.Sound('laser5.ogg')
 background_music = pygame.mixer.Sound('BackgrounMusic.ogg')
@@ -62,15 +69,20 @@ class Fish(pygame.sprite.Sprite):
         self.rect.y = random.randrange(-300, -20)
         self.rect.x = random.randrange(0, screen_width)
 
-    def update(self):
+    def update(aFishType):
         """ Called each frame. """
-
         # Move block down one pixel
-        self.rect.y += 20
 
+        if aFishType == 'plankton':
+            Fish.rect.y += 20
         # If block is too far down, reset to top of screen.
-        if self.rect.y > 717:
-            self.reset_pos()
+            if Fish().rect.y > 717:
+                Fish.reset_pos()
+        elif aFishType == 'Fish':
+            Fish().rect.y += 20
+            if Fish.rect.x > 1277:
+                Fish.reset_pos()
+
 
 
 class Player(Fish):
@@ -90,14 +102,45 @@ class Player(Fish):
 
 # This is a list of 'sprites.' Each fish in the program is
 # added to this list. The list is managed by a class called 'Group.'
-fish_list = pygame.sprite.Group()
+Fish_list = pygame.sprite.Group()
+Plankton_list = pygame.sprite.Group()
+Player_list = pygame.sprite.Group()
 
 # This is a list of every sprite. All fish and the player as well.
-all_sprites_list = pygame.sprite.Group()
+Fish_sprites_list = pygame.sprite.Group()
+Plankton_sprites_list = pygame.sprite.Group()
+Player_sprites_list = pygame.sprite.Group()
+
+aPlankton = Fish(plankton_image)
+Fish_list.add(aPlankton)
 
 # TODO make this into a function that creates a list of fishType
 #def fishLists(Fish,Image, range)
 
+def fishList(aFishType,fishImage,aRange):
+ for i in range(aRange):
+    # This represents a fishType
+    aFish = Fish(fishImage)
+    aFish.fishType = aFishType
+
+    # Set a random location for the fishType
+    aFish.rect.x = random.randrange(screen_width)
+    aFish.rect.y = random.randrange(screen_height)
+
+    # Add the fishType to the list of objects
+    if aFishType == 'plankton':
+        Plankton_list.add(aFish)
+    elif aFishType == 'Fish':
+        Fish_list.add(aFish)
+
+
+    #print "loop: all_sprites_list:" + str(len(all_sprites_list.sprites()))
+
+
+#create fishTypeLists
+fishList('plankton',plankton_image,10)
+fishList('Fish',leftShark_image,2)
+fishList('Fish',leftPiranha_image,2)
 
 for i in range(1):
     # This represents a plankton
@@ -108,13 +151,16 @@ for i in range(1):
     plankton.rect.y = random.randrange(screen_height)
 
     # Add the plankton to the list of objects
-    fish_list.add(plankton)
-    all_sprites_list.add(plankton)
+    #fish_list.add(plankton)
+    Plankton_list.add(plankton)
 
 
 # Create a small fish player fish
 player = Player(player_image)
-all_sprites_list.add(player)
+Player_list.add(player)
+
+rightPiranha = Fish(rightPiranha_image)
+Fish_list.add(rightPiranha)
 
 # Loop until the user clicks the close button.
 done = False
@@ -123,6 +169,7 @@ done = False
 clock = pygame.time.Clock()
 
 eaten = False
+
 
 
 # -------- Main Program Loop -----------
@@ -144,10 +191,13 @@ while not done:
     screen.blit(background, [0, 0])
 
     # Calls update() method on every sprite in the list
-    all_sprites_list.update()
+
+    Plankton_list.update()
+    Fish_list.update()
+    Player_list.update()
 
     # See if the player fish has collided with anything.
-    planktons_eaten_list = pygame.sprite.spritecollide(player, fish_list, False)
+    planktons_eaten_list = pygame.sprite.spritecollide(player, Plankton_list, False)
 
 
     # Check the list of collisions.
@@ -160,7 +210,10 @@ while not done:
         plankton.reset_pos()
 
     # Draw all the spites
-    all_sprites_list.draw(screen)
+    Plankton_list.draw(screen)
+    Fish_sprites_list.draw(screen)
+    Fish_list.draw(screen)
+    Player_list.draw(screen)
 
     # Limit to 20 frames per second
     clock.tick(10)
