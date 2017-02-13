@@ -9,7 +9,7 @@ class Fish(pygame.sprite.Sprite):
         super(self.__class__,self).__init__()
         self.size = ""
         self.speed = ""
-        self.position =cor ""
+        self.position = ""
         self.image = pygame.Surface([width, height])
         self.rect = self.image.get_rect()
         self.list = []
@@ -177,7 +177,6 @@ collision = False
 
 
 # -------- Main Program Loop -----------
-
 while not done:
     # --- Main event loop
     for event in pygame.event.get(): # User did something
