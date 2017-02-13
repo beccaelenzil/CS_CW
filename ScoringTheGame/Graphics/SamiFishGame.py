@@ -83,12 +83,20 @@ class Fish(pygame.sprite.Sprite):
         if self.rect.y > 410:
             self.reset_pos()
 
+     #TODO option to create an updateXY(self,x,y): update top to bottom or left to right
+
+
+    # TODO def fishMove(Fish,params): that can be used by any instance(type) of FISH, player type
+
 
 class Player(Fish):
     """ The player class derives from Fish, but overrides the 'update'
     functionality with new a movement function that will move the block
     with the mouse. """
     def update(self):
+
+        self.fishType = "player"
+
         # Get the current mouse position. This returns the position
         # as a list of two numbers.
         pos = pygame.mouse.get_pos()
@@ -98,6 +106,7 @@ class Player(Fish):
         # Set the player object to the mouse location
         self.rect.x = pos[0]
         self.rect.y = pos[1]
+
 
 # This is a list of fish 'sprites.' Each fish in the program is
 # added to this list. The list is managed by a class called 'Group.'
@@ -119,6 +128,8 @@ def fishList(aFishType,fishImage,aRange):
 
     # Add the fishType to the list of objects
     fish_list.add(aFish)
+
+    # Add to all sprites
     all_sprites_list.add(aFish)
 
     #print "loop: all_sprites_list:" + str(len(all_sprites_list.sprites()))
@@ -129,9 +140,11 @@ fishList('plankton',plankton_image,10)
 fishList('leftShark',leftShark_image,5)
 fishList('leftPirahana',leftPiranha_image,5)
 
+
 # Create a Fish.Player
 player = Player(player_image)
 all_sprites_list.add(player)
+
 
 """
 # Debug lists
@@ -170,6 +183,18 @@ while not done:
     all_sprites_list.update()
 
     """
+    # TODO could update all sprites that are plankton & player from top to bottom,
+    #  all other fish sprites update from left/right
+    # Example only
+    for sprite in all_sprites_list:
+       if sprite.fishType == "plankton" or "player":
+            sprite.updateXY(400,1)
+       else: # all other fish types
+            sprite.updateXY(1277,717)
+    """
+
+
+    """
     # player eats all fish it has collided with
 
     # See if the player has collided with any fish.
@@ -201,12 +226,12 @@ while not done:
             fish.reset_pos()
 
         else:
-            # once player has collided with a non plankton, remove it from the collision list
+            # TODO once player has collided with a non plankton, remove it from the collision list
             print(fish.fishType + " not eaten ")
-            #fish.reset_pos()
+            fish.reset_pos()
 
-            #reset postion for leftShark
-            fish.reset_posXY(1277,717)
+            #reset position for leftShark (per example)
+            #fish.reset_posXY(1277,717)
 
     # Draw all the spites
     all_sprites_list.draw(screen)
