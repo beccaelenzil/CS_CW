@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2eacc368-f998-4d20-983f-dd796855820c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.py" afterPath="$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScoringTheGame/Graphics/SamiFishGame.py" afterPath="$PROJECT_DIR$/ScoringTheGame/Graphics/SamiFishGame.py" />
     </list>
     <ignored path="IntroCS_CW.iws" />
@@ -26,8 +27,8 @@
       <file leaf-file-name="Fish.io_Main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.io_Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="160" column="14" selection-start-line="160" selection-start-column="14" selection-end-line="160" selection-end-column="14" />
+            <state relative-caret-position="153">
+              <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="169" selection-end-column="42" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -54,13 +55,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SamiFishGame.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SamiFishGame.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/SamiFishGame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3043">
-              <caret line="194" column="25" selection-start-line="194" selection-start-column="25" selection-end-line="194" selection-end-column="25" />
+            <state relative-caret-position="323">
+              <caret line="22" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="250" selection-end-column="0" />
               <folding>
-                <element signature="e#120#133#0" expanded="true" />
+                <element signature="e#141#154#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fish.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+              <folding>
+                <element signature="e#2#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,18 +82,8 @@
       <file leaf-file-name="sprite.py" pinned="false" current-in-tab="false">
         <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/pygame/sprite.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
+            <state relative-caret-position="803">
               <caret line="398" column="0" selection-start-line="398" selection-start-column="0" selection-end-line="398" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BackgroundMusic.ogg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/BackgroundMusic.ogg">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -107,13 +110,6 @@
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SmallFish.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/SmallFish.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -174,10 +170,11 @@
         <option value="$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.io_Classes.py" />
         <option value="$PROJECT_DIR$/ScoringTheGame/Agar game.py" />
         <option value="$PROJECT_DIR$/untitled folder/example.py" />
-        <option value="$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.py" />
         <option value="$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.io_Main.py" />
         <option value="$PROJECT_DIR$/ScoringTheGame/Graphics/BackgroundMusic.ogg" />
+        <option value="$PROJECT_DIR$/ScoringTheGame/Graphics/Fish_Game_Main.py" />
         <option value="$PROJECT_DIR$/ScoringTheGame/Graphics/SamiFishGame.py" />
+        <option value="$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.py" />
       </list>
     </option>
   </component>
@@ -301,7 +298,7 @@
       <recent name="$PROJECT_DIR$/ScoringTheGame" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.SamiFishGame">
+  <component name="RunManager" selected="Python.Fish">
     <configuration default="false" name="Fish.io_Classes" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -543,10 +540,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.SamiFishGame" />
-        <item index="1" class="java.lang.String" itemvalue="Python.example" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Fish" />
+        <item index="1" class="java.lang.String" itemvalue="Python.SamiFishGame" />
         <item index="2" class="java.lang.String" itemvalue="Python.Fish.io_Classes" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Fish" />
+        <item index="3" class="java.lang.String" itemvalue="Python.example" />
         <item index="4" class="java.lang.String" itemvalue="Python.Agar game" />
       </list>
     </recent_temporary>
@@ -564,7 +561,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29376602" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32650602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42105263" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33493975" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33493975" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -612,18 +609,12 @@
           <line>32</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.py</url>
-          <line>1</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/GuessingGame.py" />
     <entry file="file://$PROJECT_DIR$/randomWalkScore_CW.txt" />
     <entry file="file://$PROJECT_DIR$/pygameCheck.py" />
     <entry file="file://$PROJECT_DIR$/GameofLifeSimulation.py" />
@@ -780,16 +771,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/SmallFish.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -836,30 +817,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.io_Main.py">
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/pygame/sprite.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="160" column="14" selection-start-line="160" selection-start-column="14" selection-end-line="160" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="803">
+          <caret line="398" column="0" selection-start-line="398" selection-start-column="0" selection-end-line="398" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/pygame/sprite.py">
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Fish_Game_Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="398" column="0" selection-start-line="398" selection-start-column="0" selection-end-line="398" selection-end-column="0" />
+        <state relative-caret-position="4233">
+          <caret line="249" column="0" selection-start-line="249" selection-start-column="0" selection-end-line="249" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/SamiFishGame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3043">
-          <caret line="194" column="25" selection-start-line="194" selection-start-column="25" selection-end-line="194" selection-end-column="25" />
+        <state relative-caret-position="323">
+          <caret line="22" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="250" selection-end-column="0" />
           <folding>
-            <element signature="e#120#133#0" expanded="true" />
+            <element signature="e#141#154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.io_Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="169" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+          <folding>
+            <element signature="e#2#15#0" expanded="true" />
           </folding>
         </state>
       </provider>

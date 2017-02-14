@@ -117,7 +117,6 @@ all_sprites_list = pygame.sprite.Group()
 
 # function that creates list of any fishType
 def fishList(aFishType,fishImage,aRange):
-<<<<<<< Updated upstream
  for i in range(aRange):
     # This represents a fishType
     aFish = Fish(fishImage)
@@ -129,22 +128,8 @@ def fishList(aFishType,fishImage,aRange):
 
     # Add the fishType to the list of objects
     fish_list.add(aFish)
-=======
-    for i in range(aRange):
-        # This represents a fishType
-        aFish = Fish(fishImage)
-        aFish.fishType = aFishType
 
-        # Set a random location for the fishType
-        aFish.rect.x = random.randrange(screen_width)
-        aFish.rect.y = random.randrange(screen_height)
 
-        # Add the fishType to the list of objects
-        if aFishType == 'plankton':
-            Plankton_list.add(aFish)
-        elif aFishType == 'Fish':
-            Fish_list.add(aFish)
->>>>>>> Stashed changes
 
     # Add to all sprites
     all_sprites_list.add(aFish)
