@@ -20,6 +20,7 @@ screen = pygame.display.set_mode([screen_width, screen_height])
 pygame.display.set_caption("Fish Game")
 background = pygame.image.load("SeaBackground.png")
 scorecount = 0
+highScore = 0
 #plankton image
 plankton_image = pygame.image.load("Plankton.png")
 plankton_image.set_colorkey(WHITE)
@@ -31,8 +32,12 @@ player_image.set_colorkey(WHITE)
 #shark_image
 leftShark_image = pygame.image.load("leftShark.png")
 
+rightShark_image = pygame.image.load("rightShark.png")
+
 #piranha_image
 leftPiranha_image = pygame.image.load("leftPiranha.png")
+
+rightPiranha_image = pygame.image.load("rightPiranha.png")
 
 #eaten sound
 eaten_sound = pygame.mixer.Sound('laser5.ogg')
@@ -86,12 +91,24 @@ class Fish(pygame.sprite.Sprite):
             if self.rect.y > 750:
                 self.reset_posXY(random.randrange(0,screen_width),0)
 
-        else:
-            self.rect.x -= random.randint(10,20)
+        elif self.fishType == 'leftShark' or 'leftPiranha':
+            self.rect.x -= random.randint(5,10)
             self.rect.y += random.randint(-3,3)
-            if self.rect.x < 0:
+            if self.rect.x < -200:
                 self.reset_posXY(screen_width,random.randrange(0,screen_height))
+            if scorecount >5 and scorecount<=10:
+                self.rect.x -= random.randint(8,15)
+                self.rect.y += random.randint(-5,5)
+            elif scorecount > 10 and scorecount <= 15:
+                self.rect.x -= random.randint(12,20)
+                self.rect.y += random.randint(-5,5)
+            elif scorecount > 20:
+                self.rect.x -= random.randint(15,25)
+                self.rect.y += random.randint(-10,10)
 
+        #elif self.fishType == 'rightShark' or 'rightPiranha':
+         #   self.rect.x += random.randint(10,20)
+          #  self.rect.y += random.randint(-3,3)
 
 
 class Player(Fish):
@@ -148,16 +165,17 @@ def fishList(aFishType,fishImage,aRange):
 
 
 
-fishList('plankton',plankton_image,1)
-fishList('leftShark',leftShark_image,5)
-fishList('leftPirahana',leftPiranha_image,5)
+plankton_number = 0
+fishList('plankton',plankton_image,5 + plankton_number)
+fishList('leftShark',leftShark_image,7)
+fishList('leftPirahana',leftPiranha_image,7)
+#fishList('rightPirahana',rightPiranha_image,7)
+#fishList('rightShark',rightShark_image,7)
 
 
-# Create a Fish.Player
+
 player = Player(player_image)
 all_sprites_list.add(player)
-
-
 
 """
 # Debug lists
@@ -186,6 +204,19 @@ while not done:
             # Flag that we are done so we exit this loop
             done = True
 
+    """
+    if scorecount >5 and scorecount<10:
+
+    elif scorecount >10 and scorecount<15:
+
+    elif scorecount >15 and scorecount<25:
+
+
+    elif scorecount >25:
+    """
+
+
+
     # Clear the screen
     screen.fill(WHITE)
 
@@ -194,35 +225,6 @@ while not done:
     # Calls update() method on every sprite in the list
     all_sprites_list.update()
 
-    """
-    # TODO could update all sprites that are plankton & player from top to bottom,
-    #  all other fish sprites update from left/right
-    # Example only
-    for sprite in all_sprites_list:
-       if sprite.fishType == "plankton" or "player":
-            sprite.updateXY(400,1)
-       else: # all other fish types
-            sprite.updateXY(1277,717)
-    """
-
-
-    """
-    # player eats all fish it has collided with
-
-    # See if the player has collided with any fish.
-    fish_eaten_list = pygame.sprite.spritecollide(player, fish_list, False)
-
-    # Check the list of all collisions.
-
-    for fish in fish_eaten_list:
-        print fish.fishType
-        eaten += 1
-        print(eaten)
-        eaten_sound.play()
-
-        # Reset fish to the top of the screen to fall again.
-        fish.reset_pos()
-     """
 
     # player only eats plankton it has collided with
     # See if player has collided with plankton only
@@ -234,28 +236,31 @@ while not done:
     for fish in fish_collided_list:
         if fish.fishType == "plankton":
             eaten += 1
-            print(fish.fishType + " eat " + str(eaten))
+            print'eaten: ' + str(eaten) + ' plankton'
             eaten_sound.play()
-            # Reset fish to the top of the screen to fall again.
+            # Reset plankton to the top of the screen to fall again.
             fish.reset_pos()
             scorecount += 1
         else:
             # TODO once player has collided with a non plankton, remove it from the collision list
-            print(fish.fishType + " not eaten ")
+            print(fish.fishType + " ate you ")
             print "you lost"
+            eaten_sound.play()
+            scorecount = 0
+            eaten = 0
             player.reset_pos()
-            #reset position for leftShark (per example)
             #fish.reset_posXY(1277,717)
 
     scoreboard = font.render("Score: " + str(scorecount), True, BLACK)
     screen.blit(scoreboard,[10,10])
 
 
+
     # Draw all the spites
     all_sprites_list.draw(screen)
 
     # Limit to 20 frames per second
-    clock.tick(10)
+    clock.tick(20)
 
     # Go ahead and update the screen with what we've drawn.
     pygame.display.flip()
