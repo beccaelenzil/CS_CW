@@ -91,7 +91,13 @@ class Fish(pygame.sprite.Sprite):
             if self.rect.y > 750:
                 self.reset_posXY(random.randrange(0,screen_width),0)
 
-        elif self.fishType == 'leftShark' or 'leftPiranha':
+        elif self.fishType == 'right':
+            self.rect.x += random.randint(10,20)
+            self.rect.y += random.randint(-3,3)
+            if self.rect.x > screen_width+200:
+                self.reset_posXY(-200,random.randrange(0,screen_height))
+
+        elif self.fishType == 'left':
             self.rect.x -= random.randint(5,10)
             self.rect.y += random.randint(-3,3)
             if self.rect.x < -200:
@@ -106,9 +112,8 @@ class Fish(pygame.sprite.Sprite):
                 self.rect.x -= random.randint(15,25)
                 self.rect.y += random.randint(-10,10)
 
-        #elif self.fishType == 'rightShark' or 'rightPiranha':
-         #   self.rect.x += random.randint(10,20)
-          #  self.rect.y += random.randint(-3,3)
+
+
 
 
 class Player(Fish):
@@ -156,6 +161,7 @@ def fishList(aFishType,fishImage,aRange):
     aFish.rect.y = random.randrange(screen_height)
 
     # Add the fishType to the list of objects
+    #print aFishType
     fish_list.add(aFish)
 
     # Add to all sprites
@@ -166,11 +172,11 @@ def fishList(aFishType,fishImage,aRange):
 
 
 plankton_number = 0
-fishList('plankton',plankton_image,5 + plankton_number)
-fishList('leftShark',leftShark_image,7)
-fishList('leftPirahana',leftPiranha_image,7)
-#fishList('rightPirahana',rightPiranha_image,7)
-#fishList('rightShark',rightShark_image,7)
+fishList('plankton', plankton_image,2 + plankton_number)
+fishList('right',rightPiranha_image,7)
+fishList('right',rightShark_image,7)
+fishList('left',leftShark_image,10)
+fishList('left',leftPiranha_image,10)
 
 
 
@@ -260,7 +266,7 @@ while not done:
     all_sprites_list.draw(screen)
 
     # Limit to 20 frames per second
-    clock.tick(20)
+    clock.tick(10)
 
     # Go ahead and update the screen with what we've drawn.
     pygame.display.flip()

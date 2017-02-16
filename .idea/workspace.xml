@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eacc368-f998-4d20-983f-dd796855820c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScoringTheGame/Graphics/Plankton.png" afterPath="$PROJECT_DIR$/ScoringTheGame/Graphics/Plankton.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScoringTheGame/Graphics/SmallFish.png" afterPath="$PROJECT_DIR$/ScoringTheGame/Graphics/SmallFish.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScoringTheGame/Graphics/leftPiranha.png" afterPath="$PROJECT_DIR$/ScoringTheGame/Graphics/leftPiranha.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScoringTheGame/Graphics/leftShark.png" afterPath="$PROJECT_DIR$/ScoringTheGame/Graphics/leftShark.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScoringTheGame/Graphics/rightPiranha.png" afterPath="$PROJECT_DIR$/ScoringTheGame/Graphics/rightPiranha.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScoringTheGame/Graphics/rightShark.png" afterPath="$PROJECT_DIR$/ScoringTheGame/Graphics/rightShark.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.py" afterPath="$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.py" />
     </list>
     <ignored path="IntroCS_CW.iws" />
@@ -74,8 +68,8 @@
       <file leaf-file-name="Fish.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="106" column="10" selection-start-line="106" selection-start-column="10" selection-end-line="106" selection-end-column="10" />
+            <state relative-caret-position="939">
+              <caret line="97" column="37" selection-start-line="97" selection-start-column="37" selection-end-line="97" selection-end-column="37" />
               <folding>
                 <element signature="e#74#87#0" expanded="true" />
               </folding>
@@ -859,8 +853,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="106" column="10" selection-start-line="106" selection-start-column="10" selection-end-line="106" selection-end-column="10" />
+        <state relative-caret-position="939">
+          <caret line="97" column="37" selection-start-line="97" selection-start-column="37" selection-end-line="97" selection-end-column="37" />
           <folding>
             <element signature="e#74#87#0" expanded="true" />
           </folding>
