@@ -203,6 +203,7 @@ clock = pygame.time.Clock()
 eaten = False
 
 
+
 # -------- Main Program Loop -----------
 while not done:
     # User did something
@@ -210,7 +211,7 @@ while not done:
         # If user clicked close
         if event.type == pygame.QUIT:
             # Flag that we are done so we exit this loop
-            highScore = highScore
+            #highScore = highScore
             done = True
 
     """
@@ -225,16 +226,14 @@ while not done:
     """
 
 
-
-    # Clear the screen
-    screen.fill(WHITE)
-
     #Copy pixels from the source surface (background_image) onto the screen
     screen.blit(background, [0, 0])
     # Calls update() method on every sprite in the list
+    #all_sprites_list.update()
+    # Draw all the spites
+    all_sprites_list.draw(screen)
+    # Calls update() method on every sprite in the list
     all_sprites_list.update()
-
-
     # player only eats plankton it has collided with
     # See if player has collided with plankton only
     fish_collided_list = pygame.sprite.spritecollide(player, fish_list, False)
@@ -245,7 +244,7 @@ while not done:
     for fish in fish_collided_list:
         if fish.fishType == "plankton":
             eaten += 1
-            print'eaten: ' + str(eaten) + ' plankton'
+            #print'eaten: ' + str(eaten) + ' plankton'
             eaten_sound.play()
             # Reset plankton to the top of the screen to fall again.
             fish.reset_pos()
@@ -253,16 +252,17 @@ while not done:
 
         else:
             # TODO once player has collided with a non plankton, remove it from the collision list
-            print(fish.fishType + " ate you ")
-            print "you lost"
+            #print(fish.fishType + " ate you ")
+            #print "you lost"
             eaten_sound.play()
-            #highscore
+            #nonglobal highscore
             if highScore <scorecount:
                 highScore = scorecount
             scorecount = 0
             eaten = 0
             player.reset_pos()
             #fish.reset_posXY(1277,717)
+
 
     highScoreBoard = font.render("High Score: " + str(highScore), True, BLACK)
     screen.blit(highScoreBoard,[screen_width-285,10])
@@ -271,14 +271,15 @@ while not done:
 
 
 
-    # Draw all the spites
-    all_sprites_list.draw(screen)
 
-    # Limit to 20 frames per second
-    clock.tick(60)
+
 
     # Go ahead and update the screen with what we've drawn.
     pygame.display.flip()
+
+
+    # Limit to 20 frames per second
+    clock.tick(60)
 
 pygame.quit()
 
