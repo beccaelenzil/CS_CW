@@ -21,7 +21,7 @@ clock = pygame.time.Clock()
 
 
 
-SmallFish = pygame.image.load("SmallFish.png")
+SmallFish = pygame.image.load("SmallFish1.png")
 background = pygame.image.load("Background for Fish Game.jpg")
 
 # -------- Main Program Loop -----------

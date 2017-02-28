@@ -27,8 +27,24 @@ plankton_image.set_colorkey(WHITE)
 
 
 #player image
-player_image = pygame.image.load("SmallFish.png")
-player_image.set_colorkey(WHITE)
+player_image_1 = pygame.image.load("SmallFish1.png")
+player_image_1.set_colorkey(WHITE)
+
+player_image_2 = pygame.image.load("SmallFish2.png")
+player_image_2.set_colorkey(WHITE)
+
+player_image_3 = pygame.image.load("SmallFish1.png")
+player_image_3.set_colorkey(WHITE)
+
+player_image_4 = pygame.image.load("SmallFish1.png")
+player_image_4.set_colorkey(WHITE)
+
+player_image_5 = pygame.image.load("SmallFish1.png")
+player_image_5.set_colorkey(WHITE)
+
+player_image_6 = pygame.image.load("SmallFish1.png")
+player_image_6.set_colorkey(WHITE)
+
 
 #shark_image
 leftShark_image = pygame.image.load("leftShark.png")
@@ -140,6 +156,10 @@ class Player(Fish):
         self.rect.x = 0
         self.rect.y = 0
 
+    def playerGrow(self):
+        if scorecount > 2 and scorecount <= 5:
+            self.image = Player(player_image_2)
+            all_sprites_list.add(self)
 
 
 
@@ -170,19 +190,18 @@ def fishList(aFishType,fishImage,aRange):
 
     #print "loop: all_sprites_list:" + str(len(all_sprites_list.sprites()))
 
-
-
 plankton_number = 0
-fishList('plankton', plankton_image,4 + plankton_number)
+fishList('plankton', plankton_image,3 + plankton_number)
 fishList('right',rightPiranha_image,12)
 fishList('right',rightShark_image,10)
 fishList('left',leftShark_image,5)
 fishList('left',leftPiranha_image,5)
 
-
-
-player = Player(player_image)
+player = Player(player_image_1)
 all_sprites_list.add(player)
+
+
+
 
 """
 # Debug lists
@@ -214,6 +233,8 @@ while not done:
             #highScore = highScore
             done = True
 
+
+
     """
     if scorecount >5 and scorecount<10:
 
@@ -224,6 +245,7 @@ while not done:
 
     elif scorecount >25:
     """
+
 
 
     #Copy pixels from the source surface (background_image) onto the screen
@@ -249,6 +271,8 @@ while not done:
             # Reset plankton to the top of the screen to fall again.
             fish.reset_pos()
             scorecount += 1
+            player.playerGrow()
+
 
         else:
             # TODO once player has collided with a non plankton, remove it from the collision list
@@ -279,7 +303,8 @@ while not done:
 
 
     # Limit to 20 frames per second
-    clock.tick(60)
+    clock.tick(10 )
+
 
 pygame.quit()
 

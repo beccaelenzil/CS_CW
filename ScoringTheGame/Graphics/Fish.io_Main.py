@@ -91,7 +91,7 @@ class Player(pygame.sprite.Sprite):
     def __init__(self, width, height):
         super(self.__class__,self).__init__()
         self.size = 5
-        self.image = pygame.image.load("SmallFish.png")
+        self.image = pygame.image.load("SmallFish1.png")
         self.image_surface = pygame.Surface([width, height])
         self.rect = self.image.get_rect()
 
@@ -117,7 +117,7 @@ clock = pygame.time.Clock()
 
 pygame.mouse.set_visible(False)
 
-#SmallFish = pygame.image.load("SmallFish.png")
+#SmallFish = pygame.image.load("SmallFish1.png")
 #SmallFish.set_colorkey(WHITE)
 
 

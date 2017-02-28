@@ -28,7 +28,7 @@ plankton_image = pygame.image.load("Plankton.png")
 plankton_image.set_colorkey(WHITE)
 
 #player image
-player_image = pygame.image.load("SmallFish.png")
+player_image = pygame.image.load("SmallFish1.png")
 player_image.set_colorkey(WHITE)
 
 #shark_image

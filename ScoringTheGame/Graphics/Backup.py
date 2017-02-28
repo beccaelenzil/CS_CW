@@ -24,7 +24,7 @@ clock = pygame.time.Clock()
 
 
 
-SmallFish = pygame.image.load("SmallFish.png")
+SmallFish = pygame.image.load("SmallFish1.png")
 SmallFish.set_colorkey(WHITE)
 piranha = pygame.image.load("rightPiranha.png")
 
