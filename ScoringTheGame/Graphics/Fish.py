@@ -70,8 +70,10 @@ class Fish(pygame.sprite.Sprite):
         super(Fish, self).__init__()
 
         self.image = aFishImage
+        self.mask = pygame.mask.from_surface(self.image)
         self.fishType = ""
         self.speed = ""
+
 
 
         # Fetch the rectangle object that has the dimensions of the image
@@ -131,36 +133,62 @@ class Fish(pygame.sprite.Sprite):
 
 
 
-
+a_player_image = player_image_1
 
 class Player(Fish):
     """ The player class derives from Fish, but overrides the 'update'
     functionality with new a movement function that will move the block
     with the mouse. """
+    def __init__(self, player_image,x,y):
+        super(Fish,self).__init__()
+        self.image = a_player_image
+        self.rect = self.image.get_rect()
+        self.mask = pygame.mask.from_surface(self.image)
+        self.rect.x = x
+        self.rect.y = y
+
+
+
     def update(self):
 
         self.fishType = "player"
 
         # Get the current mouse position. This returns the position
         # as a list of two numbers.
-        pos = pygame.mouse.get_pos()
-        pygame.mouse.set_visible(False)
+
+
+        #pygame.mouse.set_visible(False)
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_UP:
+                #self.acc_y -= .5
+                self.rect.y -= 15 #+ self.acc_y
+            elif event.key == pygame.K_DOWN:
+                #self.acc_y += .5
+                self.rect.y += 15 #+ self.acc_y
+            elif event.key == pygame.K_LEFT:
+                #self.acc_x -= .5
+                self.rect.x -= 15 #+ self.acc_x
+            elif event.key == pygame.K_RIGHT:
+                #self.acc_x += .5
+                self.rect.x += 15 #+ self.acc_x
+
+        #print [self.acc_x, self.acc_y]
 
         # Fetch the x and y out of the list,
         # just like we'd fetch letters out of a string.
         # Set the player object to the mouse location
-        self.rect.x = pos[0]
-        self.rect.y = pos[1]
+
 
     def reset_pos(self):
         self.rect.x = 0
         self.rect.y = 0
 
     def playerGrow(self):
-        if scorecount > 2 and scorecount <= 5:
-            self.image = Player(player_image_2)
+        if scorecount > 0 and scorecount <= 2:
+            player.image = player_image_2
             all_sprites_list.add(self)
-
+        elif scorecount > 2 and scorecount <= 4:
+            player.image = player_image_3
 
 
 # This is a list of fish 'sprites.' Each fish in the program is
@@ -197,7 +225,7 @@ fishList('right',rightShark_image,10)
 fishList('left',leftShark_image,5)
 fishList('left',leftPiranha_image,5)
 
-player = Player(player_image_1)
+player = Player(a_player_image, 0, 0)
 all_sprites_list.add(player)
 
 
@@ -233,21 +261,6 @@ while not done:
             #highScore = highScore
             done = True
 
-
-
-    """
-    if scorecount >5 and scorecount<10:
-
-    elif scorecount >10 and scorecount<15:
-
-    elif scorecount >15 and scorecount<25:
-
-
-    elif scorecount >25:
-    """
-
-
-
     #Copy pixels from the source surface (background_image) onto the screen
     screen.blit(background, [0, 0])
     # Calls update() method on every sprite in the list
@@ -258,7 +271,15 @@ while not done:
     all_sprites_list.update()
     # player only eats plankton it has collided with
     # See if player has collided with plankton only
-    fish_collided_list = pygame.sprite.spritecollide(player, fish_list, False)
+
+    fish_collided_list = []
+        #pygame.sprite.spritecollide(player, fish_list, False)
+
+    for item in fish_list:
+        if pygame.sprite.collide_mask(player, item):
+            fish_collided_list.append(item)
+
+
 
     # Check the list of collisions for just planktons.
     font = pygame.font.SysFont('Calibri', 50, True, False)
@@ -275,9 +296,6 @@ while not done:
 
 
         else:
-            # TODO once player has collided with a non plankton, remove it from the collision list
-            #print(fish.fishType + " ate you ")
-            #print "you lost"
             eaten_sound.play()
             #nonglobal highscore
             if highScore <scorecount:
@@ -303,7 +321,7 @@ while not done:
 
 
     # Limit to 20 frames per second
-    clock.tick(10 )
+    clock.tick(10)
 
 
 pygame.quit()
