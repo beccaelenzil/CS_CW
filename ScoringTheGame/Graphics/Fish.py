@@ -33,16 +33,16 @@ player_image_1.set_colorkey(WHITE)
 player_image_2 = pygame.image.load("SmallFish2.png")
 player_image_2.set_colorkey(WHITE)
 
-player_image_3 = pygame.image.load("SmallFish1.png")
+player_image_3 = pygame.image.load("SmallFish3.png")
 player_image_3.set_colorkey(WHITE)
 
-player_image_4 = pygame.image.load("SmallFish1.png")
+player_image_4 = pygame.image.load("SmallFish3.png")
 player_image_4.set_colorkey(WHITE)
 
-player_image_5 = pygame.image.load("SmallFish1.png")
+player_image_5 = pygame.image.load("SmallFish3.png")
 player_image_5.set_colorkey(WHITE)
 
-player_image_6 = pygame.image.load("SmallFish1.png")
+player_image_6 = pygame.image.load("SmallFish3.png")
 player_image_6.set_colorkey(WHITE)
 
 
@@ -161,16 +161,17 @@ class Player(Fish):
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_UP:
                 #self.acc_y -= .5
-                self.rect.y -= 15 #+ self.acc_y
-            elif event.key == pygame.K_DOWN:
+                self.rect.y -= 20 #+ self.acc_y
+            if event.key == pygame.K_DOWN:
                 #self.acc_y += .5
-                self.rect.y += 15 #+ self.acc_y
-            elif event.key == pygame.K_LEFT:
+                self.rect.y += 20 #+ self.acc_y
+            if event.key == pygame.K_LEFT:
                 #self.acc_x -= .5
-                self.rect.x -= 15 #+ self.acc_x
-            elif event.key == pygame.K_RIGHT:
+                self.rect.x -= 20 #+ self.acc_x
+            if event.key == pygame.K_RIGHT:
                 #self.acc_x += .5
-                self.rect.x += 15 #+ self.acc_x
+                self.rect.x += 20 #+ self.acc_x
+
 
         #print [self.acc_x, self.acc_y]
 
@@ -184,9 +185,11 @@ class Player(Fish):
         self.rect.y = 0
 
     def playerGrow(self):
-        if scorecount > 0 and scorecount <= 2:
+        if scorecount == 0:
+            player.image = player_image_1
+        elif scorecount > 0 and scorecount <= 2:
             player.image = player_image_2
-            all_sprites_list.add(self)
+            #all_sprites_list.add(self)
         elif scorecount > 2 and scorecount <= 4:
             player.image = player_image_3
 
