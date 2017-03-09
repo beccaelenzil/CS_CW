@@ -1,5 +1,3 @@
-
-#make it so the mouse moves slower and the player can't leave the screen
 import random
 import pygame
 
@@ -21,6 +19,8 @@ background = pygame.image.load("SeaBackground.png")
 
 scorecount = 0
 highScore = 0
+
+
 #plankton image
 plankton_image = pygame.image.load("Plankton.png")
 plankton_image.set_colorkey(WHITE)
@@ -58,7 +58,9 @@ rightPiranha_image = pygame.image.load("rightPiranha.png")
 
 #eaten sound
 eaten_sound = pygame.mixer.Sound('laser5.ogg')
-
+bite_sound_1 = pygame.mixer.Sound('Bite1.ogg')
+bite_sound_2 = pygame.mixer.Sound('Bite2.ogg')
+Theme = pygame.mixer.Sound('Theme.ogg')
 
 
 class Fish(pygame.sprite.Sprite):
@@ -103,6 +105,9 @@ class Fish(pygame.sprite.Sprite):
     def update(self):
         """ Called each frame. """
         if self.fishType == 'plankton':
+            """
+            if the fish is a plankton, it moves straight down
+            """
         # Move block down one pixel
             self.rect.y += 12
 
@@ -111,12 +116,18 @@ class Fish(pygame.sprite.Sprite):
                 self.reset_posXY(random.randrange(0,screen_width),0)
 
         elif self.fishType == 'right':
+            """
+            if the fish image faces to the right side of the screen, it moves to the right
+            """
             self.rect.x += random.randint(7,15)
             self.rect.y += random.randint(-3,3)
             if self.rect.x > screen_width+200:
                 self.reset_posXY(-200,random.randrange(0,screen_height))
 
         elif self.fishType == 'left':
+            """
+            if the fish image faces to the left side of the screen, it moves to the left
+            """
             self.rect.x -= random.randint(5,10)
             self.rect.y += random.randint(-3,3)
             if self.rect.x < -200:
@@ -131,6 +142,7 @@ class Fish(pygame.sprite.Sprite):
                 self.rect.x -= random.randint(15,25)
                 self.rect.y += random.randint(-10,10)
 
+#pygame.transform.rotate(image, 180)
 
 
 a_player_image = player_image_1
@@ -165,12 +177,15 @@ class Player(Fish):
             if event.key == pygame.K_DOWN:
                 #self.acc_y += .5
                 self.rect.y += 20 #+ self.acc_y
+
             if event.key == pygame.K_LEFT:
                 #self.acc_x -= .5
                 self.rect.x -= 20 #+ self.acc_x
+                pygame.transform.rotate(player.image, 180)
             if event.key == pygame.K_RIGHT:
                 #self.acc_x += .5
                 self.rect.x += 20 #+ self.acc_x
+                pygame.transform.rotate(player.image, 180)
 
 
         #print [self.acc_x, self.acc_y]
@@ -181,17 +196,20 @@ class Player(Fish):
 
 
     def reset_pos(self):
-        self.rect.x = 0
-        self.rect.y = 0
+        self.rect.x = (screen_width/2)
+        self.rect.y = 300
 
     def playerGrow(self):
         if scorecount == 0:
             player.image = player_image_1
-        elif scorecount > 0 and scorecount <= 2:
+            self.mask = pygame.mask.from_surface(self.image)
+        if scorecount > 0 and scorecount <= 2:
             player.image = player_image_2
-            #all_sprites_list.add(self)
-        elif scorecount > 2 and scorecount <= 4:
+            self.mask = pygame.mask.from_surface(self.image)
+        if scorecount > 2 and scorecount <= 4:
             player.image = player_image_3
+            self.mask = pygame.mask.from_surface(self.image)
+
 
 
 # This is a list of fish 'sprites.' Each fish in the program is
@@ -222,27 +240,17 @@ def fishList(aFishType,fishImage,aRange):
     #print "loop: all_sprites_list:" + str(len(all_sprites_list.sprites()))
 
 plankton_number = 0
+
+#lists for all the different types of fish (not player)
 fishList('plankton', plankton_image,3 + plankton_number)
 fishList('right',rightPiranha_image,12)
 fishList('right',rightShark_image,10)
 fishList('left',leftShark_image,5)
 fishList('left',leftPiranha_image,5)
 
-player = Player(a_player_image, 0, 0)
+player = Player(a_player_image, screen_width/2, 200)
 all_sprites_list.add(player)
 
-
-
-
-"""
-# Debug lists
-# print "all_sprites_list length" + str(len(all_sprites_list.sprites()))
-
-# loop through the all_sprites_list and print out all the sprite groups
-spriteListLen = len(all_sprites_list.sprites())
-for i in range(spriteListLen):
-    print "Sprite List: " + str(len(all_sprites_list.sprites())) + " is " + str(all_sprites_list.sprites())
-"""
 
 # Loop until the user clicks the close button.
 done = False
@@ -253,6 +261,7 @@ clock = pygame.time.Clock()
 eaten = False
 
 
+Theme.play()
 
 # -------- Main Program Loop -----------
 while not done:
@@ -291,7 +300,7 @@ while not done:
         if fish.fishType == "plankton":
             eaten += 1
             #print'eaten: ' + str(eaten) + ' plankton'
-            eaten_sound.play()
+            bite_sound_2.play()
             # Reset plankton to the top of the screen to fall again.
             fish.reset_pos()
             scorecount += 1
@@ -299,13 +308,14 @@ while not done:
 
 
         else:
-            eaten_sound.play()
+            bite_sound_1.play()
             #nonglobal highscore
             if highScore <scorecount:
                 highScore = scorecount
             scorecount = 0
             eaten = 0
             player.reset_pos()
+            player.playerGrow()
             #fish.reset_posXY(1277,717)
 
 
