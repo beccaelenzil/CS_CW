@@ -120,7 +120,7 @@ class Fish(pygame.sprite.Sprite):
             if the fish image faces to the right side of the screen, it moves to the right
             """
             self.rect.x += random.randint(7,15)
-            self.rect.y += random.randint(-3,3)
+            #self.rect.y += random.randint(-3,3)
             if self.rect.x > screen_width+200:
                 self.reset_posXY(-200,random.randrange(0,screen_height))
 
@@ -129,18 +129,18 @@ class Fish(pygame.sprite.Sprite):
             if the fish image faces to the left side of the screen, it moves to the left
             """
             self.rect.x -= random.randint(5,10)
-            self.rect.y += random.randint(-3,3)
+            self.rect.y += random.randint(-1,1)
             if self.rect.x < -200:
                 self.reset_posXY(screen_width,random.randrange(0,screen_height))
             if scorecount >5 and scorecount<=10:
                 self.rect.x -= random.randint(8,15)
-                self.rect.y += random.randint(-5,5)
+                self.rect.y += random.randint(-1,1)
             elif scorecount > 10 and scorecount <= 15:
                 self.rect.x -= random.randint(12,20)
-                self.rect.y += random.randint(-5,5)
+                self.rect.y += random.randint(-1,1)
             elif scorecount > 20:
                 self.rect.x -= random.randint(15,25)
-                self.rect.y += random.randint(-10,10)
+                self.rect.y += random.randint(-1,1)
 
 #pygame.transform.rotate(image, 180)
 
@@ -167,7 +167,14 @@ class Player(Fish):
 
         # Get the current mouse position. This returns the position
         # as a list of two numbers.
-
+        if self.rect.x > screen_width + 50:
+            self.rect.x = -50
+        if self.rect.x < -50:
+            self.rect.x = screen_width
+        if self.rect.y < -50:
+            self.rect.y = screen_height
+        if self.rect.y > screen_height + 50:
+            self.rect.y = -50
 
         #pygame.mouse.set_visible(False)
         if event.type == pygame.KEYDOWN:
@@ -177,7 +184,6 @@ class Player(Fish):
             if event.key == pygame.K_DOWN:
                 #self.acc_y += .5
                 self.rect.y += 20 #+ self.acc_y
-
             if event.key == pygame.K_LEFT:
                 #self.acc_x -= .5
                 self.rect.x -= 20 #+ self.acc_x
