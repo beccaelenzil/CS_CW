@@ -89,7 +89,69 @@ class Date:
             self.day = DIM[self.month]
             if DIM[self.month] == 0:
                 self.year -= 1
+                self.month = 12
+                self.day = 31
+
+    def addNDays(self,N):
+        for x in range(N):
+            self.tomorrow()
+
+
+    def subNDays(self,N):
+        for x in range(N):
+            self.yesterday()
+
+    def isBefore(self, d2):
+        if self.year < d2.year:
+            return True
+        elif self.year == d2.year:
+            if self.month < d2.month:
+                return True
+            if self.month == d2.month:
+                if self.day < d2.day:
+                    return True
+                else:
+                    return False
+            else:
+                return False
+        else:
+            return False
+
+
+    def isAfter(self,d2):
+        if self.year > d2.year:
+            return True
+        elif self.year == d2.year:
+            if self.month > d2.month:
+                return True
+            if self.month == d2.month:
+                if self.day > d2.day:
+                    return True
+                else:
+                    return False
+            else:
+                return False
+        else:
+            return False
 
 
 
+    def diff(self, d2):
+        """
+        something's wrong
+        """
+        x = 0
+        date = self
+
+        while not date.equals(d2):
+            if date.isBefore(d2):
+                date.tomorrow()
+                x += 1
+            elif date.isAfter(d2):
+                date.yesterday()
+                x -= 1
+        return x
+
+
+    #def dow(self):
 
