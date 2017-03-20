@@ -137,9 +137,12 @@ class Date:
 
 
     def diff(self, d2):
+
         """
-        something's wrong
+        something's wrong. I get negative numbers no matter what
+        I can't figure out why
         """
+
         x = 0
         date = self
 
