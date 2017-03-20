@@ -2,7 +2,7 @@
 #
 # Problem Set 1, Problem 1: Dates
 #
-# Name:
+# Name: Colin Wood
 #
 
 class Date:
