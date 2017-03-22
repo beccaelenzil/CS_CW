@@ -141,6 +141,7 @@ class Date:
         """
         something's wrong. I get negative numbers no matter what
         I can't figure out why
+        It must be something wrong with isBefore/isAfter
         """
 
         x = 0
