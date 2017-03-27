@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eacc368-f998-4d20-983f-dd796855820c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvancedCS/Trinket/1_1_Dates.py" afterPath="$PROJECT_DIR$/AdvancedCS/Trinket/1_1_Dates.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvancedCS/Trinket/ConnectFour.py" afterPath="$PROJECT_DIR$/AdvancedCS/Trinket/ConnectFour.py" />
     </list>
     <ignored path="IntroCS_CW.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,7 +37,7 @@
       <file leaf-file-name="1_1_Dates.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/1_1_Dates.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="2533">
               <caret line="149" column="34" selection-start-line="149" selection-start-column="34" selection-end-line="149" selection-end-column="34" />
               <folding />
             </state>
@@ -46,8 +47,8 @@
       <file leaf-file-name="ConnectFour.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/ConnectFour.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="110" column="13" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
+            <state relative-caret-position="286">
+              <caret line="146" column="45" selection-start-line="146" selection-start-column="45" selection-end-line="146" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -56,7 +57,7 @@
       <file leaf-file-name="GameOfLife.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IntroCS/GameOfLife.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2002">
+            <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -66,7 +67,7 @@
       <file leaf-file-name="SegregationModel.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IntroCS/SegregationModel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="919">
+            <state relative-caret-position="3247">
               <caret line="191" column="36" selection-start-line="191" selection-start-column="36" selection-end-line="191" selection-end-column="36" />
               <folding />
             </state>
@@ -76,7 +77,7 @@
       <file leaf-file-name="Fish.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-221">
+            <state relative-caret-position="85">
               <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -161,8 +162,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-5" />
-    <option name="y" value="23" />
+    <option name="x" value="55" />
+    <option name="y" value="58" />
     <option name="width" value="1171" />
     <option name="height" value="837" />
   </component>
@@ -191,6 +192,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches">
+        <subPane />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -256,9 +260,6 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-      </pane>
-      <pane id="Scratches">
-        <subPane />
       </pane>
     </panes>
   </component>
@@ -538,7 +539,7 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-5" y="23" width="1171" height="837" extended-state="0" />
+    <frame x="55" y="58" width="1171" height="837" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29913044" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -739,9 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1224">
           <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding>
-            <element signature="e#220#233#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -749,9 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-          <folding>
-            <element signature="e#141#154#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -759,7 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6902">
           <caret line="408" column="0" selection-start-line="408" selection-start-column="0" selection-end-line="408" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -783,7 +777,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -801,13 +794,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
+        <state relative-caret-position="85">
           <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
@@ -823,7 +815,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/1_1_Dates.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="2533">
           <caret line="149" column="34" selection-start-line="149" selection-start-column="34" selection-end-line="149" selection-end-column="34" />
           <folding />
         </state>
@@ -839,7 +831,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IntroCS/GameOfLife.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2002">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -847,7 +839,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IntroCS/SegregationModel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="919">
+        <state relative-caret-position="3247">
           <caret line="191" column="36" selection-start-line="191" selection-start-column="36" selection-end-line="191" selection-end-column="36" />
           <folding />
         </state>
@@ -855,8 +847,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/ConnectFour.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="110" column="13" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
+        <state relative-caret-position="286">
+          <caret line="146" column="45" selection-start-line="146" selection-start-column="45" selection-end-line="146" selection-end-column="45" />
           <folding />
         </state>
       </provider>

@@ -101,17 +101,62 @@ class Board:
         Returns False if you can't make a move in column c.
         This means c is out of the range of columns or column c is full.
         """
-        if c > self.width:  #if column c is out of range
+        if c >= self.width or c <0:  #if column c is out of range
             return False
         elif c <= self.width:  #if column c is in range
-            if self.data[c][0] != ' ':  #if the top of the column is occupied (something's wrong here)
+            if self.data[0][c] != ' ':  #if the top of the column is occupied
                 return False
-            elif self.data[c][0] == ' ':  #if the top of the column is free (something's wrong here)
+            elif self.data[0][c] == ' ':  #if the top of the column is free
                 return True
         else:
             return True
 
+    def isFull(self):
+        """
+        checks every row and column and checks if allowsMove is true
+        or false in each column. If it's false, it returns true,
+        meaning the board is full. If allowsMove returns True, it means
+        there is a free space and the board is not full, which makes
+        isFull return False.
 
+        """
+        for i in range(self.height):
+            for i in range(self.width):
+                if self.allowsMove(i) == False:
+                    return True
+                else:
+                    return False
+
+    def delMove(self,c):
+        """
+        Passing in column, the method checks, from top to bottom, all the spaces in a column.
+        If a space is empty, nothing happens.
+        The first time it finds a space that is not empty,
+        it removes the occupant of the space (either X of O)
+        """
+        counter = 0
+        for row in range(self.height):
+            space = self.data[row][c]
+            if space == ' ':
+                counter += 1
+            elif space != ' ':  #If a space is occupied
+                self.data[row][c] = ' '; break  #put ' ' in the space, stop the loop
+
+    def winsFor(self, XO):
+        """
+        Checks horizontally for four in a row
+        """
+        H = self.height
+        W = self.width
+        D = self.data
+        # check for horizontal wins
+        for row in range(0,H):
+            for col in range(0,W-3):
+                if D[row][col] == ox and \
+                   D[row][col+1] == ox and \
+                   D[row][col+2] == ox and \
+                   D[row][col+3] == ox:
+                    return True
 
 board = Board(6,7)
 #print board
