@@ -59,15 +59,13 @@ class Board:
         it moves an X or O (argument) into the above space.
         """
         type = XO
-        counter = 0
+        counter = -1
+
         for i in range(self.height):
-            value = self.data[i][col]
+            value = self.data[i-1][col]
             if value == ' ':
                 counter += 1
-            elif value != ' ':  #If a space is occupied
-                self.data[i-1][col] = type  #put an X or O in the space above
-            if counter == self.height:  #If there are no spaces occupied in the column
-                self.data[i][col] = type  #put and X or an O at the bottom of the column
+        self.data[counter][col] = type
 
 
 
@@ -140,30 +138,78 @@ class Board:
             if space == ' ':
                 counter += 1
             elif space != ' ':  #If a space is occupied
-                self.data[row][c] = ' '; break  #put ' ' in the space, stop the loop
+                self.data[row][c] = ' ' #put ' ' in the space
+                break  #stop the loop because it doesn't need to make another action
 
     def winsFor(self, XO):
         """
         Checks horizontally for four in a row
+        Checks vertically for four in a row
+        Checks diagonally for four in a row
         """
         H = self.height
         W = self.width
         D = self.data
+        win = False
         # check for horizontal wins
         for row in range(0,H):
             for col in range(0,W-3):
-                if D[row][col] == ox and \
-                   D[row][col+1] == ox and \
-                   D[row][col+2] == ox and \
-                   D[row][col+3] == ox:
-                    return True
+                if D[row][col] == XO and \
+                   D[row][col+1] == XO and \
+                   D[row][col+2] == XO and \
+                   D[row][col+3] == XO:
+                    win = True
+        for row in range(0,H-3): #check vertical.
+            for col in range(0,W):
+                if D[row][col] == XO and \
+                   D[row+1][col] == XO and \
+                   D[row+2][col] == XO and \
+                   D[row+3][col] == XO:
+                    win = True
 
-board = Board(6,7)
-#print board
-board.addMove(4,'X')
-#print board
-board.addMove(4,'O')
-board.addMove(3,'O')
-board.addMove(4,'X')
-board.addMove(4,'O')
-print board
+        for row in range(0,H-3): #diagonal down
+            for col in range(0,W-3):
+                if D[row][col] == XO and \
+                   D[row+1][col+1] == XO and \
+                   D[row+2][col+2] == XO and \
+                   D[row+3][col+3] == XO:
+                    win = True
+        for row in range(3,H): #diagonal up
+            for col in range(0,W-3):
+                if D[row][col] == XO and \
+                   D[row-1][col+1] == XO and \
+                   D[row-2][col+2] == XO and \
+                   D[row-3][col+3] == XO:
+                    win = True
+        return win
+
+    def hostGame(self):
+        """
+        Hosts a game of connect four using previous methods
+        """
+        print 'Welcome to  connect four. Player 1 is X and player 2 is O. Please decide who is who.'
+        gameOver = False
+        playerCount = 1 #To check who's turn it is
+        while gameOver == False:
+            print self.__repr__()
+            if self.winsFor('X'):  #If X gets four in a row
+                print 'player 1, you win!'
+                break  #get out of the loop here so nothing else prints
+            elif self.winsFor('O'):  #If O gets four in a row
+                print 'player 2, you win!'
+                break
+
+            XO = 'X'
+            if playerCount%2 != 0: #If the player count is not divisible by 2, it's player 1's turn
+                XO = 'X'
+            elif playerCount%2 == 0: #If the player count is divisible by 2, it's player 2's turn
+                XO = 'O'
+
+            users_col = -1
+            while self.allowsMove(users_col) == False:
+                users_col = input(XO + ", please choose a column: ")
+            self.addMove(users_col, XO)
+
+            playerCount += 1  #add one to player count after ever move
+
+
