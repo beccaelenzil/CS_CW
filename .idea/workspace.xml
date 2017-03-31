@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eacc368-f998-4d20-983f-dd796855820c" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/AdvancedCS/Trinket/ConnectFour.py" afterPath="$PROJECT_DIR$/AdvancedCS/Trinket/Board.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvancedCS/Trinket/Board.py" afterPath="$PROJECT_DIR$/AdvancedCS/Trinket/Board.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvancedCS/Trinket/Player.py" afterPath="$PROJECT_DIR$/AdvancedCS/Trinket/Player.py" />
     </list>
     <ignored path="IntroCS_CW.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,21 +43,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Board.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Board.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/Board.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="196" column="30" selection-start-line="196" selection-start-column="30" selection-end-line="196" selection-end-column="30" />
+            <state relative-caret-position="102">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Player.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/Player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+            <state relative-caret-position="436">
+              <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -86,7 +86,7 @@
       <file leaf-file-name="Fish.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="-170">
               <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -116,7 +116,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Iterations and Loops.py" />
         <option value="$PROJECT_DIR$/Repeated Tasks Reading" />
         <option value="$PROJECT_DIR$/RepeatedTasks.py" />
         <option value="$PROJECT_DIR$/Functions.py" />
@@ -167,11 +166,12 @@
         <option value="$PROJECT_DIR$/AdvancedCS/Trinket/ConnectFour.py" />
         <option value="$PROJECT_DIR$/AdvancedCS/Trinket/player.py" />
         <option value="$PROJECT_DIR$/AdvancedCS/Trinket/Player.py" />
+        <option value="$PROJECT_DIR$/AdvancedCS/Trinket/Board.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="75" />
+    <option name="x" value="83" />
     <option name="y" value="23" />
     <option name="width" value="1171" />
     <option name="height" value="837" />
@@ -232,20 +232,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="IntroCS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IntroCS_CW" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IntroCS_CW" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="AdvancedCS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -291,7 +277,7 @@
       <recent name="$PROJECT_DIR$/ScoringTheGame" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ConnectFour">
+  <component name="RunManager" selected="Python.Fish">
     <configuration default="false" name="Fish" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -305,23 +291,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="IntroCS_CW" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="SamiFishGame" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ScoringTheGame/Graphics" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="IntroCS_CW" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScoringTheGame/Graphics/SamiFishGame.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -373,6 +342,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="IntroCS_CW" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AdvancedCS/Trinket/Board.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Player" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdvancedCS/Trinket" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="IntroCS_CW" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AdvancedCS/Trinket/Player.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -526,18 +512,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.Fish" />
-      <item index="1" class="java.lang.String" itemvalue="Python.SamiFishGame" />
-      <item index="2" class="java.lang.String" itemvalue="Python.SegregationSimulation" />
-      <item index="3" class="java.lang.String" itemvalue="Python.1_1_Dates" />
-      <item index="4" class="java.lang.String" itemvalue="Python.ConnectFour" />
+      <item index="1" class="java.lang.String" itemvalue="Python.SegregationSimulation" />
+      <item index="2" class="java.lang.String" itemvalue="Python.1_1_Dates" />
+      <item index="3" class="java.lang.String" itemvalue="Python.ConnectFour" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Player" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.ConnectFour" />
-        <item index="1" class="java.lang.String" itemvalue="Python.1_1_Dates" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Fish" />
-        <item index="3" class="java.lang.String" itemvalue="Python.SegregationSimulation" />
-        <item index="4" class="java.lang.String" itemvalue="Python.SamiFishGame" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Fish" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Player" />
+        <item index="2" class="java.lang.String" itemvalue="Python.ConnectFour" />
+        <item index="3" class="java.lang.String" itemvalue="Python.1_1_Dates" />
+        <item index="4" class="java.lang.String" itemvalue="Python.SegregationSimulation" />
       </list>
     </recent_temporary>
   </component>
@@ -548,7 +534,7 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="75" y="23" width="1171" height="837" extended-state="0" />
+    <frame x="83" y="23" width="1171" height="837" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29913044" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -762,6 +748,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6902">
           <caret line="408" column="0" selection-start-line="408" selection-start-column="0" selection-end-line="408" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -805,22 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#1575#4328#0" expanded="false" />
-            <element signature="e#4882#6197#0" expanded="false" />
-            <element signature="e#6233#6289#0" expanded="false" />
-            <element signature="e#6325#6751#0" expanded="false" />
-            <element signature="e#7116#7606#0" expanded="false" />
-            <element signature="e#8203#10277#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/1_1_Dates.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2533">
@@ -853,18 +824,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/Board.py">
+    <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/Player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="196" column="30" selection-start-line="196" selection-start-column="30" selection-end-line="196" selection-end-column="30" />
+        <state relative-caret-position="436">
+          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/Player.py">
+    <entry file="file://$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+        <state relative-caret-position="-170">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#1575#4328#0" expanded="false" />
+            <element signature="e#4882#6197#0" expanded="false" />
+            <element signature="e#6233#6289#0" expanded="false" />
+            <element signature="e#6325#6751#0" expanded="false" />
+            <element signature="e#7116#7606#0" expanded="false" />
+            <element signature="e#8203#10277#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/Board.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>

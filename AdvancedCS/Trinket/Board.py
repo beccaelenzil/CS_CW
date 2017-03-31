@@ -1,9 +1,9 @@
-# python 2
-#
-# Problem Set 2, Problem 1
-# Name:
-#
-
+# File: Board.py
+# Verions: Python 2.7.13
+# Name: Colin Wood
+# Date: 3/20/17
+# Desc: PROG DESC
+# Usage: Define a board and run hostGame [b = Board(7,6) / b.hostGame()]
 
 class Board:
     """ a datatype representing a C4 board
