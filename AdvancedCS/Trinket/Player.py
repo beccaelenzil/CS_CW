@@ -70,7 +70,9 @@ class Player:
             if b.allowsMove(i) == False:
                 scores[i] = -1
             else:
-                if winsFor()
+                if b.winsFor():
+                    scores[i] = 100
+
 
 
 
