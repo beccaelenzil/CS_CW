@@ -166,7 +166,6 @@ class Board:
                    D[row+2][col] == XO and \
                    D[row+3][col] == XO:
                     win = True
-
         for row in range(0,H-3): #diagonal down
             for col in range(0,W-3):
                 if D[row][col] == XO and \
@@ -213,3 +212,5 @@ class Board:
             playerCount += 1  #add one to player count after ever move
 
 
+b = Board(7,6)
+b.hostGame()
