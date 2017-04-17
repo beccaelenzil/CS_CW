@@ -1,7 +1,12 @@
 from Board import Board
 import random
 
-
+# File: Board.py
+# Verions: Python 2.7.13
+# Name: Colin Wood
+# Date: 4/14/17
+# Desc: PROG DESC
+# Usage:
 
 class Player:
 

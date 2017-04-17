@@ -1,3 +1,25 @@
+#File: Sorting.py
+#Versions: Python 2.7.13
+#Name: Colin Wood
+#Date: 4/14/17
+#Desc: PROG DESC
+#Usage:
+
+import random
+#import matplotlib.pyplot as plt
+
+def display(some_list):
+    plt.clf()
+    plt.bar(range(len(some_list)),some_list)
+    plt.pause(0.01)
+    plt.show()
+
+
+def makeList(listLength, listRange):
+    numList = []
+    for i in range(listLength):
+        numList.append((random.randint(0, listRange)))
+    return numList
 
 def mergeSort(alist):
     print "Splitting ",alist
@@ -36,21 +58,35 @@ def mergeSort(alist):
 #mergeSort(alist)
 #print(alist)
 
-def quickSort(aList):
-    i = 0
-    j = 0
-    mid = len(aList)/2
-    base = aList[0]
+def quickSort(aList, start, stop):
+    if stop - start < 1:
+    #why can't it be if len(aList) < 1?
+        return aList
+    else:
+        base = aList[start]
+        left = start
+        right = stop
+        while left <= right:
+            while aList[left] < base:
+                left += 1
+            while aList[right] > base:
+                right -= 1
+            if left < right:
+                aList[left], aList[right] = aList[right], aList[left]
+                left += 1
+                right -= 1
 
-    for i in range(0, len(aList)):
-        if aList[i] >= base:
-            for j in reversed(aList):
-                if aList[len(aList)-j] >= base:
-                    aList[i] = aList[len(aList)-j]
-                    aList[len(aList)-j] = aList[1]
-    
-    return aList
+        print aList
+        quickSort(aList, start, right)
+        quickSort(aList, left, stop)
 
-print quickSort([5,4,6])
+
+my_list = [39, 30, 45, 33, 20, 61, 36, 5, 31, 64]
+quickSort(my_list, 0, len(my_list) - 1)
+
+
+
+
+
 
 
