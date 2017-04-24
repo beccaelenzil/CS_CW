@@ -6,7 +6,7 @@
 #Usage:
 
 import random
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 def display(some_list):
     plt.clf()
@@ -71,18 +71,77 @@ def quickSort(aList, start, stop):
                 left += 1
             while aList[right] > base:
                 right -= 1
-            if left < right:
+            if left <= right:
                 aList[left], aList[right] = aList[right], aList[left]
                 left += 1
                 right -= 1
 
         print aList
+
+
         quickSort(aList, start, right)
         quickSort(aList, left, stop)
 
+        return aList
 
-my_list = [39, 30, 45, 33, 20, 61, 36, 5, 31, 64]
-quickSort(my_list, 0, len(my_list) - 1)
+def selectionSort(aList):
+
+    print aList
+
+    for b in range(len(aList)):
+        small = b
+        for i in range(b+1,len(aList)):
+            if aList[i] < aList[small]:
+                small = i
+
+        aList[small], aList[b] = aList[b], aList[small]
+        print aList
+        #display(aList)
+
+    return aList
+
+def insertionSort(aList):
+    print aList
+    for i in range(1, len(aList)):
+        while i > 0 and aList[i] < aList[i-1]:
+            aList[i], aList[i-1] = aList[i-1], aList[i]
+            i-=1
+            print aList
+    return aList
+
+
+def shellSort(aList):
+    list1 = []
+    list2 = []
+    
+
+
+
+
+
+
+
+
+
+
+
+#add a test() function
+def test():
+    #mergeList = makeList(5,5)
+    #print(mergeList)
+    #mergeSort(mergeList)
+    #quickSortList = makeList(6,6)
+    #print quickSort(quickSortList, 0, len(quickSortList)-1)
+    selectionSortList = makeList(6,6)
+    #print selectionSort(selectionSortList)
+    insertionSortList = makeList(6,6)
+    print insertionSort(insertionSortList)
+
+test()
+
+
+#my_list = [39, 30, 45, 33, 20, 61, 36, 5, 31, 64]
+#print quickSort(my_list, 0, len(my_list) - 1)
 
 
 
