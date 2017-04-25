@@ -16,6 +16,10 @@ def display(some_list):
 
 
 def makeList(listLength, listRange):
+    """
+    returns a list of length, listLength. The list will be made of
+    random numbers from 0, to listRange.
+    """
     numList = []
     for i in range(listLength):
         numList.append((random.randint(0, listRange)))
@@ -110,17 +114,24 @@ def insertionSort(aList):
     return aList
 
 
-def shellSort(aList):
-    list1 = []
-    list2 = []
-    
+def shellSort(aList, gap):
 
+    for j in range(gap):
+        gapList = []
+        for i in range(j, len(aList), gap):
+            gapList.append(aList[i])
 
+        print gapList
+        gapList = insertionSort(gapList)
+        print gapList
 
+        z = 0
+        for i in range(j, len(aList), gap):
+            aList[i] = gapList[z]
+            z=z+1
+        print aList
 
-
-
-
+    #return insertionSort(aList)
 
 
 
@@ -134,8 +145,10 @@ def test():
     #print quickSort(quickSortList, 0, len(quickSortList)-1)
     selectionSortList = makeList(6,6)
     #print selectionSort(selectionSortList)
-    insertionSortList = makeList(6,6)
-    print insertionSort(insertionSortList)
+    #insertionSortList = makeList(6,6)
+    #print insertionSort(insertionSortList)
+    shellSortList = makeList(10,6)
+    shellSort(shellSortList, 2)
 
 test()
 
