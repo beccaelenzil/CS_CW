@@ -115,23 +115,34 @@ def insertionSort(aList):
 
 
 def shellSort(aList, gap):
-
+    """
+    Makes insertion sort easier for the computer by putting the numbers
+    closer to where they're supposed to be.
+    """
     for j in range(gap):
         gapList = []
         for i in range(j, len(aList), gap):
             gapList.append(aList[i])
-
         print gapList
         gapList = insertionSort(gapList)
         print gapList
-
         z = 0
         for i in range(j, len(aList), gap):
             aList[i] = gapList[z]
-            z=z+1
+            z+=1
         print aList
 
-    #return insertionSort(aList)
+    return insertionSort(aList)
+
+def bubbleSort(aList):
+    swap = True
+    while swap == True:
+        swap = False
+        for i in range(len(aList)-1):
+            if aList[i] > aList[i+1]:
+                aList[i], aList[i+1] = aList[i+1], aList[i]
+                swap = True
+    return aList
 
 
 
@@ -147,8 +158,10 @@ def test():
     #print selectionSort(selectionSortList)
     #insertionSortList = makeList(6,6)
     #print insertionSort(insertionSortList)
-    shellSortList = makeList(10,6)
-    shellSort(shellSortList, 2)
+    #shellSortList = makeList(10,6)
+    #shellSort(shellSortList, 2)
+    bubbleSortList = makeList(10,6)
+    print bubbleSort(bubbleSortList)
 
 test()
 

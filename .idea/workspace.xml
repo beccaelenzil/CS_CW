@@ -64,14 +64,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sorting.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Sorting.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/Sorting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="150" column="30" selection-start-line="150" selection-start-column="30" selection-end-line="150" selection-end-column="30" />
+            <state relative-caret-position="195">
+              <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
               <folding>
                 <element signature="e#102#115#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lists.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/lists.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="searching.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/searching.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -84,16 +104,6 @@
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameOfLife.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IntroCS/GameOfLife.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -141,8 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Functions.py" />
-        <option value="$PROJECT_DIR$/MultiplicationPractice Game.py" />
         <option value="$PROJECT_DIR$/MultiplicationPracticeGame.py" />
         <option value="$PROJECT_DIR$/MultiplicationGameWTime.py" />
         <option value="$PROJECT_DIR$/GuessingGame.py" />
@@ -192,6 +200,8 @@
         <option value="$PROJECT_DIR$/AdvancedCS/Trinket/Player.py" />
         <option value="$PROJECT_DIR$/AdvancedCS/Trinket/graphing.py" />
         <option value="$PROJECT_DIR$/AdvancedCS/Trinket/Sorting.py" />
+        <option value="$PROJECT_DIR$/AdvancedCS/Trinket/lists.py" />
+        <option value="$PROJECT_DIR$/AdvancedCS/Trinket/searching.py" />
       </list>
     </option>
   </component>
@@ -302,24 +312,7 @@
       <recent name="$PROJECT_DIR$/ScoringTheGame" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Sorting">
-    <configuration default="false" name="Fish" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ScoringTheGame/Graphics" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="IntroCS_CW" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScoringTheGame/Graphics/Fish.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.lists">
     <configuration default="false" name="ConnectFour" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -384,6 +377,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="IntroCS_CW" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AdvancedCS/Trinket/graphing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="lists" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdvancedCS/Trinket" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="IntroCS_CW" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AdvancedCS/Trinket/lists.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -536,19 +546,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Fish" />
-      <item index="1" class="java.lang.String" itemvalue="Python.ConnectFour" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Player" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Sorting" />
-      <item index="4" class="java.lang.String" itemvalue="Python.graphing" />
+      <item index="0" class="java.lang.String" itemvalue="Python.ConnectFour" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Player" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Sorting" />
+      <item index="3" class="java.lang.String" itemvalue="Python.graphing" />
+      <item index="4" class="java.lang.String" itemvalue="Python.lists" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Sorting" />
-        <item index="1" class="java.lang.String" itemvalue="Python.graphing" />
-        <item index="2" class="java.lang.String" itemvalue="Python.ConnectFour" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Player" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Fish" />
+        <item index="0" class="java.lang.String" itemvalue="Python.lists" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Sorting" />
+        <item index="2" class="java.lang.String" itemvalue="Python.graphing" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ConnectFour" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Player" />
       </list>
     </recent_temporary>
   </component>
@@ -565,7 +575,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29913044" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32650602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43984476" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43467012" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43467012" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -623,8 +633,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/RecursiveFunctions.py" />
-    <entry file="file://$PROJECT_DIR$/SegregationSimulation.py" />
     <entry file="file://$PROJECT_DIR$/SegregationModel.py" />
     <entry file="file://$PROJECT_DIR$/GameOfLife.py" />
     <entry file="file://$PROJECT_DIR$/VISUALSegregationModel.py" />
@@ -892,11 +900,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/Sorting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="150" column="30" selection-start-line="150" selection-start-column="30" selection-end-line="150" selection-end-column="30" />
+        <state relative-caret-position="195">
+          <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
           <folding>
             <element signature="e#102#115#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/lists.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/searching.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
