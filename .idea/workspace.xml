@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eacc368-f998-4d20-983f-dd796855820c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvancedCS/Trinket/Sorting.py" afterPath="$PROJECT_DIR$/AdvancedCS/Trinket/Sorting.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvancedCS/Trinket/searching.py" afterPath="$PROJECT_DIR$/AdvancedCS/Trinket/searching.py" />
     </list>
     <ignored path="IntroCS_CW.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/Player.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -67,8 +67,8 @@
       <file leaf-file-name="Sorting.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/Sorting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+            <state relative-caret-position="263">
+              <caret line="163" column="36" selection-start-line="162" selection-start-column="4" selection-end-line="163" selection-end-column="36" />
               <folding>
                 <element signature="e#102#115#0" expanded="true" />
               </folding>
@@ -89,8 +89,8 @@
       <file leaf-file-name="searching.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/searching.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="374">
+              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -312,7 +312,7 @@
       <recent name="$PROJECT_DIR$/ScoringTheGame" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.lists">
+  <component name="RunManager" selected="Python.searching">
     <configuration default="false" name="ConnectFour" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -326,23 +326,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="IntroCS_CW" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AdvancedCS/Trinket/Board.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Player" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdvancedCS/Trinket" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="IntroCS_CW" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AdvancedCS/Trinket/Player.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -394,6 +377,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="IntroCS_CW" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AdvancedCS/Trinket/lists.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="searching" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdvancedCS/Trinket" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="IntroCS_CW" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AdvancedCS/Trinket/searching.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -547,18 +547,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.ConnectFour" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Player" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Sorting" />
-      <item index="3" class="java.lang.String" itemvalue="Python.graphing" />
-      <item index="4" class="java.lang.String" itemvalue="Python.lists" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Sorting" />
+      <item index="2" class="java.lang.String" itemvalue="Python.graphing" />
+      <item index="3" class="java.lang.String" itemvalue="Python.lists" />
+      <item index="4" class="java.lang.String" itemvalue="Python.searching" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.lists" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Sorting" />
-        <item index="2" class="java.lang.String" itemvalue="Python.graphing" />
-        <item index="3" class="java.lang.String" itemvalue="Python.ConnectFour" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Player" />
+        <item index="0" class="java.lang.String" itemvalue="Python.searching" />
+        <item index="1" class="java.lang.String" itemvalue="Python.lists" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Sorting" />
+        <item index="3" class="java.lang.String" itemvalue="Python.graphing" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ConnectFour" />
       </list>
     </recent_temporary>
   </component>
@@ -854,14 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/PersonClass.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/1_1_Dates.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2533">
@@ -878,16 +870,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/Player.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/graphing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -898,13 +880,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/Sorting.py">
+    <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/Player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
           <folding>
-            <element signature="e#102#115#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/PersonClass.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -916,10 +906,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/Sorting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="163" column="36" selection-start-line="162" selection-start-column="4" selection-end-line="163" selection-end-column="36" />
+          <folding>
+            <element signature="e#102#115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AdvancedCS/Trinket/searching.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="374">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
           <folding />
         </state>
       </provider>
