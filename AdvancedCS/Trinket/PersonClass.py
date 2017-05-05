@@ -6,5 +6,5 @@ class Person():
         s = "My name is "+self.name+"."
         return s
 
-    def main:
+    def main(self):
         print 'gitbranch'
